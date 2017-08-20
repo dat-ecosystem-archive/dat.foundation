@@ -69,6 +69,7 @@
     "express": "^4.15.4",
     "express-simple-redirect": "^1.0.1",
     "sheetify": "^6.1.1",
+    "sheetify-nested": "^1.0.2",
     "tachyons": "^4.8.1"
   }
 }
