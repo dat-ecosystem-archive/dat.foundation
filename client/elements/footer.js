@@ -1,28 +1,28 @@
-var html = require('choo/html')
+const html = require('choo/html')
 
 module.exports = function () {
   return html`
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6 col-sm-4">
-          <h4 class="footer-heading horizontal-rule-footer">Explore</h4>
-          <ul class="footer-nav-list">
-            <li><a href="/explore" data-no-routing>Explore Datasets</a></li>
+  <footer class="bg-neutral white">
+    <section class="pa2 pa4-l mw8-ns center-ns">
+      <div class="pt3 cf">
+        <div class="fl w-third">
+          <h4 class="horizontal-rule-footer">Explore</h4>
+          <ul class="dat-list p0 list">
+            <li><a href="/explore">Explore Datasets</a></li>
             <li><a href="/team">Team</a></li>
             <li><a href="https://blog.datproject.org">Blog</a></li>
           </ul>
         </div>
-        <div class="col-xs-6 col-sm-4">
-          <h4 class="footer-heading horizontal-rule-footer">Learn</h4>
-          <ul class="footer-nav-list">
+        <div class="fl w-third">
+          <h4 class="horizontal-rule-footer">Learn</h4>
+          <ul class="dat-list p0 list">
             <li><a href="/about">About</a></li>
             <li><a href="http://docs.datproject.org">Docs</a></li>
           </ul>
         </div>
-        <div class="col-xs-6 col-sm-4">
-          <h4 class="footer-heading horizontal-rule-footer">Connect</h4>
-          <ul class="footer-nav-list">
+        <div class="fl w-third">
+          <h4 class="horizontal-rule-footer">Connect</h4>
+          <ul class="dat-list list p0">
             <li><a href="https://twitter.com/dat_project">Twitter</a></li>
             <li><a href="https://github.com/datproject">GitHub</a></li>
             <li>
@@ -32,10 +32,10 @@ module.exports = function () {
           </ul>
         </div>
       </div>
-      <p class="footer-credits">
+      <p class="">
         <strong>Dat</strong> 2017 • Page source on <a href="https://github.com/datproject/datproject.org">github</a>
       </p>
-    </div>
+    </section>
   </footer>
   `
 }

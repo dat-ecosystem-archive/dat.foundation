@@ -10,58 +10,21 @@
   "bugs": {
     "url": "https://github.com/datproject/datproject.org/issues"
   },
-  "main": "server/index.js",
-  "bin": "server/cli.js",
-  "browser": {
-    "server/**/**/*": false
-  },
-  "browserify": {
-    "transform": [
-      [
-        "sheetify/transform",
-        {
-          "use": "sheetify-nested"
-        }
-      ]
-    ]
-  },
+  "main": "server.js",
   "scripts": {
-    "server": "node ./server/cli",
-    "lint": "standard",
-    "database": "dat-registry-api",
-    "clean-test": "rm -rf tests/archiver && rm -rf tests/township.db && rm -rf tests/*.sqlite",
-    "test": "./tests/test.sh",
-    "start": "npm run watch-js & npm run watch-css & npm run watch-server",
-    "render": "node bin/render-static.js",
-    "new-dat": "node tests/new-dat",
-    "watch-render": "nodemon --watch public -i public/rendered -e html bin/render-static",
-    "watch-css": "nodemon --watch client -e scss -x \"npm run build-css\"",
-    "watch-js": "mkdir -p public/js && watchify --fast --verbose -t brfs public/js/app.js -o public/js/bundle.js",
-    "watch-server": "nodemon server --watch client",
-    "build": "npm run build-js && npm run build-css",
-    "build-js": "mkdir -p public/js && browserify -t brfs public/js/app.js > public/js/bundle.js",
-    "build-js-prod": "mkdir -p public/js && NODE_ENV=production browserify -t brfs -t envify public/js/app.js > public/js/bundle.js",
-    "minify": "npm run minify-css && npm run minify-js",
-    "minify-css": "minify public/css/app.css > public/css/app.min.css",
-    "minify-js": "./node_modules/uglify-es/bin/uglifyjs public/js/bundle.js -o public/js/bundle.min.js"
-  },
-  "standard": {
-    "ignore": [
-      "public/**"
-    ]
+    "dev": "bankai client/app.js -c [ -u sheetify-nested ] -w --assets public",
+    "start": "bankai build client/app.js public/ -c [ -u sheetify-nested ] && node ./server.js",
+    "test": "standard && dependency-check ./package.json"
   },
   "devDependencies": {
-    "standard": "^7.1.2",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.6.3",
-    "watchify": "~3.6.0"
+    "bankai": "^8.1.1",
+    "dependency-check": "^2.9.1",
+    "standard": "^7.1.2"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
-    "browserify": "^13.0.0",
-    "choo": "^5.0.0",
+    "choo": "^6.0.0",
     "compression": "^1.7.0",
-    "css-extract": "^1.2.0",
     "dat-colors": "^3.4.0",
     "dat-design": "^5.0.0",
     "dat-icons": "^2.5.0",
@@ -69,7 +32,7 @@
     "express": "^4.15.4",
     "express-simple-redirect": "^1.0.1",
     "sheetify": "^6.1.1",
-    "sheetify-nested": "^1.0.2",
+    "sheetify-cssnext": "^1.0.7",
     "tachyons": "^4.8.1"
   }
 }

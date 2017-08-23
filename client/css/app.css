@@ -1,0 +1,111 @@
+/*
+  Dat color variables
+  TODO: Import from dat-colors (had bug couldn't figure out)
+*/
+:root {
+  --white:#FFFFFF;
+  --black:#293648;
+  --neutral:#293648;
+  --neutral-90:#394B5B;
+  --neutral-80:#505F6D;
+  --neutral-70:#65737F;
+  --neutral-60:#7C8792;
+  --neutral-50:#919BA4;
+  --neutral-40:#A7AFB6;
+  --neutral-30:#C3C9CD;
+  --neutral-20:#D3D7DB;
+  --neutral-14:#E0E3E5;
+  --neutral-10:#E9EBEC;
+  --neutral-04:#F6F7F8;
+  --green:#2ACA4B;
+  --green-hover:#199E33;
+  --green-darker:#006607;
+  --green-disabled:#94E4A5;
+  --blue:#007FFF;
+  --blue-hover:#0066CC;
+  --blue-darker:#003E83;
+  --blue-disabled:#7FBFFF;
+  --mint:#159F84;
+  --mint-hover:#0B856D;
+  --mint-darker:#045943;
+  --mint-disabled:#8ACFC1;
+  --yellow:#F2CD02;
+  --yellow-hover:#C4A500;
+  --yellow-darker: #9F7D07;
+  --yellow-disabled: #FBF0B3;
+  --red: #D8524E;
+  --red-hover: #B33C38;
+  --red-darker: #A52724;
+  --red-disabled: #EBA8A6;
+  --pink: #F9A5E4;
+}
+
+body {
+  font-family: 'Source Sans Pro', 'PT Sans', 'Calibri', sans-serif;
+  font-size: 100%;
+  background-color: var(--white);
+  color: var(--neutral);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--green);
+}
+
+/*
+  BORDER COLOR
+ */
+
+.b--dat-green {
+  border-color: var(--green);
+}
+
+.b--dat-neutral {
+  border-color: var(--neutral);
+}
+
+.b--dat-neutral-70 {
+  border-color: var(--neutral-70);
+}
+
+.b--dat-neutral-10 {
+  border-color: var(--neutral-10);
+}
+
+.b--dat-blue {
+  border-color: var(--blue);
+}
+
+.dat-shadow {
+  box-shadow: 0 0 30px rgba(0,0,0,0.15);
+}
+
+.dat-list {
+  text-indent: -20px;
+  margin-left: -20px;
+}
+
+.dat-list li:before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: -0.125rem;
+  width: .5rem;
+  height: .5rem;
+  margin-right: .75rem;
+  background-image: url(/public/img/dat-hexagon.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.horizontal-rule {
+  &:after {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 5px;
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+    background-color: var(--pink);
+  }
+}
