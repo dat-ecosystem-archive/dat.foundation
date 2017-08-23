@@ -64,6 +64,10 @@ a {
   border-color: var(--neutral);
 }
 
+.b--dat-neutral-80 {
+  border-color: var(--neutral-80);
+}
+
 .b--dat-neutral-70 {
   border-color: var(--neutral-70);
 }
@@ -107,5 +111,17 @@ a {
     margin-top: 1.25rem;
     margin-bottom: 1rem;
     background-color: var(--pink);
+  }
+}
+
+.horizontal-rule-footer {
+  &:after {
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 4px;
+    background-color: var(--neutral-70);
+    margin-top: .75rem;
+    margin-bottom: 1.5rem;
   }
 }
