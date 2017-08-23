@@ -3,7 +3,7 @@ const html = require('choo/html')
 module.exports = function () {
   return html`
   <footer class="bg-neutral white">
-    <section class="pa2 ph4-l mw8-ns center-ns">
+    <section class="pa2 ph4-m mw8-ns center-ns">
       <div class="pt2 cf">
         <div class="fl w-third">
           <h4 class="f4 horizontal-rule-footer">Explore</h4>

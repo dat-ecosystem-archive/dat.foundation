@@ -13,15 +13,19 @@ module.exports = function (state, emit) {
       }
 
       background-repeat: no-repeat;
-      background-position: center 150px;
+      background-position: center 300px;
+      @media screen and (min-width: 30em) {
+        // not small breakpoint from tachyons (ns)
+        background-position: center 150px;
+      }
     }
   `
   const backgroundImageUrl = 'public/img/bg-landing-page.svg'
 
   return page(html`
     <div>
-      <div class="${splash} mh3 mh4-l center contain" style="background-image: url(${backgroundImageUrl})">
-        <section class="tc pt5 pb3">
+      <div class="${splash} mh2 mh4-l center contain" style="background-image: url(${backgroundImageUrl})">
+        <section class="tc pa3 pt5-ns">
           <h1 class="f2 f1-l mb0 lh-title">A distributed data community</h1>
           <h2 class="f3 mt3 mb4 color-neutral-50 fw2">Dat is the nonprofit-backed technology & community for building apps of the future.</h2>
 
@@ -75,7 +79,7 @@ module.exports = function (state, emit) {
           'text': 'Read the documentation'
         }
       })}
-      ${sponsors('pa2 pa4-l mw8-ns center-ns')}
+      ${sponsors('pa2 pa4-m mw8-ns center-ns')}
     </div>
   `)
 }
