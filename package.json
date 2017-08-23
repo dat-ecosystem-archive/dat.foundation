@@ -14,7 +14,7 @@
   "scripts": {
     "dev": "bankai client/app.js -c [ -u sheetify-nested ] -w --assets public",
     "start": "bankai build client/app.js public/ -c [ -u sheetify-nested ] && node ./server.js",
-    "test": "standard && dependency-check ./package.json"
+    "test": "standard && dependency-check ./package.json --entry client/app.js"
   },
   "devDependencies": {
     "bankai": "^8.1.1",
@@ -22,17 +22,14 @@
     "standard": "^7.1.2"
   },
   "dependencies": {
-    "body-parser": "^1.15.2",
     "choo": "^6.0.0",
     "compression": "^1.7.0",
     "dat-colors": "^3.4.0",
-    "dat-design": "^5.0.0",
     "dat-icons": "^2.5.0",
-    "debug": "^3.0.0",
     "express": "^4.15.4",
     "express-simple-redirect": "^1.0.1",
     "sheetify": "^6.1.1",
-    "sheetify-cssnext": "^1.0.7",
+    "sheetify-nested": "^1.0.2",
     "tachyons": "^4.8.1"
   }
 }
