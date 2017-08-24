@@ -3,34 +3,56 @@ const compression = require('compression')
 const path = require('path')
 const http = require('http')
 const express = require('express')
-const app = require('./public/js/app')
-const page = require('./public/js/page')
+const app = require('./client/app')
 
-var router = express()
+const router = express()
+
+// Rendering engine
+router.engine('js', function (filePath, options, cb) {
+  const renderer = require(filePath)
+  if (!renderer) return cb(new Error('not found'))
+  const contents = renderer(options)
+  cb(null, contents.toString())
+})
+router.set('views', './views')
+router.set('view engine', 'js')
+
 router.use(compression())
 router.use('/public', express.static(path.join(__dirname, 'public')))
+
+// TODO: Redirect registry API
 router.use(redirect({
   '/blog': 'https://blog.datproject.org'
 }, 301))
-router.get('/', send)
-router.get('/about', send)
-router.get('/team', send)
+
+// Opts passed to template: views/page
+router.get('/', getRoute({
+  title: 'Welcome to Dat Project!'
+}))
+router.get('/about', getRoute({
+  title: 'About - Dat Project'
+}))
+
+// TODO: Redirect registry API
+// What is difference b/t this and above redirect?
 router.get('/blog/*', function (req, res) {
   res.redirect(301, 'http://blog.datproject.org')
 })
 
-function send (req, res) {
-  var route = req.url
-  const contents = app.toString(route)
-  res.setHeader('Content-Type', 'text/html')
-  var url = req.headers.host + route
-  return res.end(page(url, contents))
+function getRoute (opts) {
+  return function send (req, res) {
+    const route = req.url
+    const contents = app.toString(route)
+    const props = Object.assign({url: req.headers.host + route, content: contents}, opts)
+    res.setHeader('Content-Type', 'text/html')
+    return res.render('page', props)
+  }
 }
 
-var server = http.createServer(function (req, res) {
+const server = http.createServer(function (req, res) {
   return router(req, res)
 })
-var port = process.env.PORT || 8080
+const port = process.env.PORT || 8080
 server.listen(port, function (err) {
   if (err) throw err
   console.log('Listening on http://localhost:' + port)
