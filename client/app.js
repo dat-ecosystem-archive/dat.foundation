@@ -11,12 +11,16 @@ const app = choo()
 
 const views = {
   home: require('./pages/home'),
-  about: require('./pages/about')
+  about: require('./pages/about'),
+  default: require('./pages/notfound')
 }
 
 // wrap views in body we can mount to view template
 app.route('/', wrap('home'))
 app.route('/about', wrap('about'))
+
+// error route
+app.route('*', wrap('default'))
 
 if (module.parent) {
   module.exports = app

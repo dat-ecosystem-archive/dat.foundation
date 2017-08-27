@@ -13,7 +13,8 @@
   "main": "server.js",
   "scripts": {
     "dev": "bankai client/app.js -c [ -u sheetify-nested ] -w --assets public",
-    "start": "bankai build client/app.js public/ -c [ -u sheetify-nested ] && node ./server.js",
+    "build": "bankai build client/app.js public/ -c [ -u sheetify-nested ]",
+    "start": "npm run build && node ./server.js",
     "test": "standard && dependency-check ./package.json --entry client/app.js"
   },
   "devDependencies": {

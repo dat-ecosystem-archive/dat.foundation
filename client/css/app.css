@@ -125,3 +125,9 @@ a {
     margin-bottom: 1.5rem;
   }
 }
+
+svg {
+  width: inherit;
+  height: inherit;
+  fill: currentColor;
+}
