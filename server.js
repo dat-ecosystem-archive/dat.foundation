@@ -32,6 +32,10 @@ router.get('/', getRoute({
 router.get('/about', getRoute({
   title: 'About - Dat Project'
 }))
+router.use(function (req, res, next) {
+  res.status(404)
+  getRoute({title: '404 - Dat Page Not Found'})(req, res)
+})
 
 // TODO: Redirect registry API
 // What is difference b/t this and above redirect?
