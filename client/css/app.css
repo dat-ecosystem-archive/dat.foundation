@@ -97,7 +97,7 @@ a {
   width: .5rem;
   height: .5rem;
   margin-right: .75rem;
-  background-image: url(/public/img/dat-hexagon.svg);
+  background-image: url(/img/dat-hexagon.svg);
   background-size: 100%;
   background-repeat: no-repeat;
 }

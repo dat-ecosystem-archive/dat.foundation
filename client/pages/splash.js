@@ -18,7 +18,7 @@ module.exports = function () {
       Dat is the distributed data sharing tool. Use the desktop app, command line tool, and javascript library.
     </p>
     <div class="splash-visual">
-      <img src="/public/img/screenshot-dat-desktop.png" />
+      <img src="/img/screenshot-dat-desktop.png" />
     </div>
     <p class="tc pv3 color-white">
       <a href="http://datproject.github.io/dat-desktop/mac" class="btn btn--green btn--full btn--cta open-desktop mt2" target="_blank">
@@ -41,7 +41,7 @@ module.exports = function () {
     <div class="row">
       <div class="col-xs-12 col-sm-5 col-md-6 flex flex-column justify-center">
         <div class="pa2 bg-neutral screenshot">
-          <img src="/public/img/dat-gif.gif" />
+          <img src="/img/dat-gif.gif" />
         </div>
       </div>
       <div class="col-xs-12 col-sm-7 col-md-offset-1 col-md-5 flex flex-column justify-center">
@@ -82,7 +82,7 @@ module.exports = function () {
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="example">
           <div class="example-header example-header--california">
-            <img src="/public/img/example-california.svg" alt="" class="example-img">
+            <img src="/img/example-california.svg" alt="" class="example-img">
           </div>
           <div class="example-body">
             <p class="mb0 f7 ttu color-neutral-70">
@@ -104,7 +104,7 @@ module.exports = function () {
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="example">
           <div class="example-header example-header--eop">
-            <img src="/public/img/eop.png" alt="Logo EOP" class="example-img">
+            <img src="/img/eop.png" alt="Logo EOP" class="example-img">
           </div>
           <div class="example-body">
             <p class="mb0 f7 ttu color-neutral-70">
@@ -128,7 +128,7 @@ module.exports = function () {
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="example">
           <div class="example-header example-header--densho">
-            <img src="/public/img/example-densho.png" alt="" class="example-img">
+            <img src="/img/example-densho.png" alt="" class="example-img">
           </div>
           <div class="example-body">
             <p class="mb0 f7 ttu color-neutral-70">
@@ -190,13 +190,13 @@ module.exports = function () {
 
     <div class="sponsor-logos">
       <a href="https://codeforscience.org/">
-        <img src="/public/img/codeforscience.png" class="code-for-science-logo">
+        <img src="/img/codeforscience.png" class="code-for-science-logo">
       </a>
       <a href="https://sloan.org/programs/digital-technology/data-and-computational-research">
-        <img src="/public/img/sloan.png">
+        <img src="/img/sloan.png">
       </a>
       <a href="http://www.knightfoundation.org/grants/201346305/">
-        <img src="/public/img/knight.png">
+        <img src="/img/knight.png">
       </a>
     </div>
   </div>

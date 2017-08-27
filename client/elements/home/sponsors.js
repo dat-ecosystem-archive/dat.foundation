@@ -28,13 +28,13 @@ module.exports = function (sectionClass) {
       </header>
       <div class="pt3 flex items-center">
         <a class="inline-flex" href="https://codeforscience.org/">
-          <img src="/public/img/codeforscience.png" class="code-for-science-logo">
+          <img src="/img/codeforscience.png" class="code-for-science-logo">
         </a>
         <a class="inline-flex" href="https://sloan.org/programs/digital-technology/data-and-computational-research">
-          <img src="/public/img/sloan.png">
+          <img src="/img/sloan.png">
         </a>
         <a class="inline-flex" href="http://www.knightfoundation.org/grants/201346305/">
-          <img src="/public/img/knight.png">
+          <img src="/img/knight.png">
         </a>
       </div>
       <div class="pv3">

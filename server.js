@@ -18,7 +18,7 @@ router.set('views', './views')
 router.set('view engine', 'js')
 
 router.use(compression())
-router.use('/public', express.static(path.join(__dirname, 'public')))
+router.use('/', express.static(path.join(__dirname, 'public')))
 
 // TODO: Redirect registry API
 router.use(redirect({
