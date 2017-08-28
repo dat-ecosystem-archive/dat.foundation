@@ -18,7 +18,6 @@ router.set('views', './views')
 router.set('view engine', 'js')
 
 router.use(compression())
-router.use('/public', express.static(path.join(__dirname, 'public')))
 
 // TODO: Redirect registry API
 router.use(redirect({
@@ -32,6 +31,11 @@ router.get('/', getRoute({
 router.get('/about', getRoute({
   title: 'About - Dat Project'
 }))
+router.use('/', express.static(path.join(__dirname, 'public')))
+router.use(function (req, res, next) {
+  res.status(404)
+  getRoute({title: '404 - Dat Page Not Found'})(req, res)
+})
 
 // TODO: Redirect registry API
 // What is difference b/t this and above redirect?

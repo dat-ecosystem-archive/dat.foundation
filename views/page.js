@@ -8,9 +8,9 @@ module.exports = function (props) {
         <meta charset="utf-8" />
         <title>${props.title || 'Dat Project'}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/public/bundle.css">
-        <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
-        <link rel="icon" href="/public/img/favicon.ico">
+        <link rel="stylesheet" href="/fonts/fonts.css">
+        <link rel="stylesheet" href="/bundle.css">
+        <link rel="icon" href="/img/favicon.ico">
         ${metaTags()}
         <meta property="og:site_name" content="Dat Project" />
         <meta property="og:type" content="article" />
@@ -19,7 +19,7 @@ module.exports = function (props) {
         <main>
           ${format(props.content)}
         </main>
-        <script src="/public/bundle.js"></script>
+        <script src="/bundle.js"></script>
       </body>
     </html>
   `
@@ -29,8 +29,8 @@ module.exports = function (props) {
       title: props.title || 'Dat',
       author: 'Dat Project',
       description: props.description || 'Dat is the non-profit, secure, and distributed package manager for data.',
-      image: 'https://datproject.org/public/img/dat-hexagon.png',
-      twitterImage: 'https://datproject.org/public/img/dat-data-logo.png',
+      image: 'https://datproject.org/img/dat-hexagon.png',
+      twitterImage: 'https://datproject.org/img/dat-data-logo.png',
       twitterSite: '@dat_project'
     }
     return html`
