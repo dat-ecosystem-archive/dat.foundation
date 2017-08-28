@@ -8,8 +8,8 @@ module.exports = function (props) {
         <meta charset="utf-8" />
         <title>${props.title || 'Dat Project'}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/fonts/fonts.css">
         <link rel="stylesheet" href="/bundle.css">
-        <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
         <link rel="icon" href="/img/favicon.ico">
         ${metaTags()}
         <meta property="og:site_name" content="Dat Project" />
