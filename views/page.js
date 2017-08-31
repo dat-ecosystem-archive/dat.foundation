@@ -26,7 +26,7 @@ module.exports = function (props) {
 
   function metaTags () {
     const md = {
-      title: props.title || 'Dat',
+      title: props.title || 'Dat Project',
       author: 'Dat Project',
       description: props.description || 'Dat is the non-profit, secure, and distributed package manager for data.',
       image: 'https://datproject.org/img/dat-hexagon.png',

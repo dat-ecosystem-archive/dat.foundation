@@ -4,6 +4,7 @@ const team = require('../elements/team')
 
 module.exports = function (state, emit) {
   const wrapper = 'center-ns pv4 ph3 ph0-l'
+  emit(state.events.DOMTITLECHANGE, 'About Dat Project')
 
   return page(html`
     <div>

@@ -3,6 +3,8 @@ const css = require('sheetify')
 const page = require('./default')
 
 module.exports = function (state, emit) {
+  emit(state.events.DOMTITLECHANGE, '404 - Dat Not Found')
+
   const splash = css`
     :host {
       background-repeat: repeat-y;
