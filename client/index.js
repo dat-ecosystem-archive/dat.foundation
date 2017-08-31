@@ -9,6 +9,10 @@ css('./css/app.css')
 
 const app = choo()
 
+if (process.env.NODE_ENV !== 'production') {
+  app.use(require('choo-log')())
+}
+
 const views = {
   home: require('./pages/home'),
   about: require('./pages/about'),

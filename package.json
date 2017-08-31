@@ -12,10 +12,11 @@
   },
   "main": "server.js",
   "scripts": {
-    "dev": "bankai client/app.js -c [ -u sheetify-nested ] -w --assets img",
-    "build": "bankai build client/app.js public/ -c [ -u sheetify-nested ]",
+    "dev": "bankai client/ -c [ -u sheetify-nested ] -w --assets img",
+    "build": "bankai build client/ public/ -c [ -u sheetify-nested ]",
     "start": "npm run build && node ./server.js",
-    "test": "standard && dependency-check ./package.json --entry client/app.js"
+    "server": "node ./server.js",
+    "test": "standard && dependency-check ./package.json --entry client/"
   },
   "devDependencies": {
     "bankai": "^8.1.1",
@@ -24,6 +25,7 @@
   },
   "dependencies": {
     "choo": "^6.0.0",
+    "choo-log": "^7.2.1",
     "compression": "^1.7.0",
     "dat-colors": "^3.4.0",
     "dat-icons": "^2.5.0",
