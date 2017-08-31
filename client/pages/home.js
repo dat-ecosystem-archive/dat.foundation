@@ -5,6 +5,8 @@ const homeSection = require('../components/home-section')
 const sponsors = require('../elements/home/sponsors')
 
 module.exports = function (state, emit) {
+  emit(state.events.DOMTITLECHANGE, 'Dat Project - Welcome!')
+
   const splash = css`
     :host {
       svg {
