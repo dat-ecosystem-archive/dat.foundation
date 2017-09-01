@@ -70,9 +70,10 @@ module.exports = function (state, emitter) {
 
   function trackCta (e) {
     state.analytics.ctaViews[e.target.id].clicked = true
+
     analytics.append(setDefaults('ctaClick', {
       destination: e.target.href,
-      ctaViews: state.analytics.ctaViews
+      ctaClick: state.analytics.ctaViews[e.target.id]
     }))
   }
 
