@@ -3,6 +3,7 @@ const css = require('sheetify')
 const page = require('./default')
 const homeSection = require('../components/home-section')
 const sponsors = require('../elements/home/sponsors')
+const callout = require('../elements/home/callout')
 
 module.exports = function (state, emit) {
   emit(state.events.DOMTITLECHANGE, 'Dat Project - Welcome!')
@@ -15,10 +16,11 @@ module.exports = function (state, emit) {
       }
 
       background-repeat: no-repeat;
-      background-position: center 300px;
+      background-position: center 275px;
+
       @media screen and (min-width: 30em) {
-        // not small breakpoint from tachyons (ns)
-        background-position: center 150px;
+        /* ns - not small breakpoint from tachyons */
+        background-position: center 175px;
       }
     }
   `
@@ -28,15 +30,9 @@ module.exports = function (state, emit) {
     <div>
       <div class="${splash} mh2 mh4-l center contain" style="background-image: url(${backgroundImageUrl})">
         <section class="tc pa3 pt5-ns">
-          <h1 class="f2 f1-l mb0 lh-title">A distributed data community</h1>
+          <h1 class="f2 f1-l mb0 lh-title">A distributed <span class="color-green">dat</span>a community</h1>
           <h2 class="f3 mt3 mb4 color-neutral-50 fw2">Dat is the nonprofit-backed technology & community for building apps of the future.</h2>
-
-          <div class="pa6">
-          <!--
-            TODO this section
-            the class value is placeholder so it doens't look weird.
-           -->
-          </div>
+          ${callout()}
         </section>
       </div>
       ${homeSection({
@@ -72,8 +68,8 @@ module.exports = function (state, emit) {
             'text': 'Data is deduplicated between versions, reducing bandwidth costs and improving speed.'
           },
           {
-            'title': 'Data Preservation',
-            'text': 'Dat uses Secure Registers with state of the art cryptography to ensure data is trusted, archived, and preserved.'
+            'title': 'Secure Preservation',
+            'text': 'Dat uses Secure Registers with state of the art cryptography to ensure data can be trusted, archived, and preserved by anyone.'
           }
         ],
         'cta': {

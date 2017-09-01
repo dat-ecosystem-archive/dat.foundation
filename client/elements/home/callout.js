@@ -8,69 +8,69 @@ module.exports = function () {
           <div class="mt3 w3 h3 center">
             <svg><use xlink:href="#daticon-star-dat"/ ></svg>
           </div>
-          <h4 class="f4 mb0 tc">Data Tools</h4>
+          <h4 class="f4 mb0 tc small-caps">DatBase</h4>
           <p class="tc mb0 f7 ttu dat-neutral-70">
-            Research & Scientific Data
+            Distributed Data Preprints
           </p>
           <ul class="dat-list list p0 lh-copy">
             <li class="f5 mb2">
-              <b>Publish Instantly:</b> share data straight from your computer, no more file upload forms.
+              <b>Publish when ready:</b> share data privatly until you're ready to publish.
             </li>
             <li class="f5 mb2">
-              <b>Use with Git</b>: Dat can manage data alongside a git repository.
+              <b>User friendly:</b> simple to use command line tool. Works alognside apps like Dropbox or Google Drive.
             </li>
             <li class="f5 mb2">
-              <b>User Friendly:</b> a simple to use desktop app or command line tool.
+              <b>Reproducible:</b> Persistent identifcation and a full history of changes.
             </li>
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
-            <a class="bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2 mb3" href="#">Use Dat for Data</a>
+            <a class="bg-green white b f5 no-underline b--green ba grow dib v-mid ba ph3 pv2 mb3" href="http://datbase.org">Visit DatBase.org</a>
           </p>
         </div>
       </div>
       <div class="flex w-100 w-third-ns bg-white dat-shadow mv4 mh3-l mh1 pa3">
         <div class="flex-column flex">
           <div class="mt3 w3 h3 center"><svg><use xlink:href="#daticon-network"/ ></svg></div>
-          <h4 class="f4 mb0 tc">Decentralized Web</h4>
+          <h4 class="f4 mb0 tc small-caps">Distributed Web</h4>
           <p class="tc mb0 f7 ttu dat-neutral-70">
             Peer-to-peer websites
           </p>
           <ul class="dat-list list p0 lh-copy">
             <li class="f5 mb2">
-              <b>Beaker Browser:</b> a first-class distributed web browser built on Dat.
+              <b>Beaker Browser:</b> a web browser with first-class support for Dat.
             </li>
             <li class="f5 mb2">
-              <b>Instant Websites:</b> share websites without a host in Dat's network.
+              <b>Create the web:</b> build & share websites instantly, no host required.
             </li>
             <li class="f5 mb2">
-              <b>Always compatible:</b> browse any dat via Beaker, regardless of what app created it!
+              <b>Secret sharing:</b> use Dat's automatic encryption to publish private URLs.
             </li>
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
-            <a class="bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2 mb3" href="#">Visit Beaker Browser</a>
+            <a class="bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2 mb3" href="http://beakerbrowser.com">Install Beaker Browser</a>
           </p>
         </div>
       </div>
       <div class="flex w-100 w-third-ns bg-white dat-shadow mv4 mh3-l mh1 pa3">
         <div class="flex-column flex">
           <div class="mt3 w3 h3 center"><svg><use xlink:href="#daticon-happy-dat"/ ></svg></div>
-          <h4 class="tc f4 mb0">Dat Community</h4>
+          <h4 class="tc f4 mb0 small-caps">Dat.Land</h4>
           <p class="tc mb0 f7 ttu dat-neutral-70">
-            Build Custom Dat Apps
+            Dat's Hacker Community
           </p>
           <ul class="dat-list list p0 lh-copy">
             <li class="f5 mb2">
-              <b>Dat protocol:</b> painless file transfers and distributed streams.
+              <b>Open & global:</b> vibrant open source community developing & using Dat.
             </li>
             <li class="f5 mb2">
-              <b>Live sync:</b> build apps with auto-updating & distributed data sharing.
+              <b>Built on Dat:</b> create data-rich applications with Dat's painless file sync & distributed streams.
             </li>
             <li class="f5 mb2">
-              <b>Secure by default:</b> data is encrypted in transfer and content verified on arrival.
+              <b>Contribute:</b> help us build Dat's core tools and applications!
             </li>
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
-            <a class="bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2 mb3" href="#">Start Building</a>
+            <a class="bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2 mb3" href="http://dat.land">Travel to Dat Land</a>
           </p>
         </div>
       </div>
