@@ -8,7 +8,7 @@ css('dat-colors')
 css('./css/app.css')
 
 const app = choo()
-if (process.env.ANALYTICS) app.use(require('./plugins/analytics'))
+app.use(require('./plugins/scroll-top'))
 
 if (process.env.NODE_ENV !== 'production') {
   app.use(require('choo-log')())
