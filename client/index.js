@@ -9,6 +9,7 @@ css('./css/app.css')
 
 const app = choo()
 app.use(require('./plugins/scroll-top'))
+if (process.env.ANALYTICS) app.use(require('./plugins/analytics'))
 
 if (process.env.NODE_ENV !== 'production') {
   app.use(require('choo-log')())
