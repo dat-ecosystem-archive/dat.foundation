@@ -1,7 +1,7 @@
 const html = require('choo/html')
 const css = require('sheetify')
 
-module.exports = function (sectionClass) {
+module.exports = function (props) {
   const elCss = css`
     :host {
       a {
@@ -21,7 +21,7 @@ module.exports = function (sectionClass) {
   `
 
   return html`
-    <section class="${sectionClass} ${elCss}">
+    <section class="${props.klass} ${elCss}">
       <header>
         <h2 class="f2 mb0">Sponsors and Supporters</h2>
         <p class="f4 mt1 color-neutral-70 horizontal-rule">Dat is developed by the non-profit group Code for Science & Society and supported by generous sponsors.</p>
@@ -51,7 +51,7 @@ module.exports = function (sectionClass) {
               </div>
             </div>
             <div class="pa3 pa4-ns dtc-ns v-mid">
-              <a href="http://donate.datproject.org" class="no-underline f4 tc db w-100 pv3 bg-animate bg-green hover-bg-dark-green white">Donate Today</a>
+              ${props.cta}
             </div>
           </div>
         </div>

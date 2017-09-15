@@ -61,7 +61,7 @@ module.exports = function (props) {
     if (!props.cta) return
     return html`
       <p class="pv4">
-        <a href="${props.cta.link}" class="f5 white bg-animate bg-green hover-bg-dark-green pa3 link">${props.cta.text}</a>
+        ${props.cta}
       </p>
     `
   }

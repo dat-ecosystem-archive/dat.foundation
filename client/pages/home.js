@@ -3,7 +3,8 @@ const css = require('sheetify')
 const page = require('./default')
 const homeSection = require('../components/home-section')
 const sponsors = require('../elements/home/sponsors')
-const callout = require('../elements/home/callout')
+const callout = require('../components/callout')
+const cta = require('../components/cta-btn')
 
 module.exports = function (state, emit) {
   emit(state.events.DOMTITLECHANGE, 'Dat Project - Welcome!')
@@ -32,7 +33,7 @@ module.exports = function (state, emit) {
         <section class="tc pa3 pt5-ns">
           <h1 class="f2 f1-l mb0 lh-title">A distributed <span class="color-green">dat</span>a community</h1>
           <h2 class="f3 mt3 mb4 color-neutral-50 fw2">Dat is the nonprofit-backed technology & community for building apps of the future.</h2>
-          ${callout()}
+          ${callout(state, emit)}
         </section>
       </div>
       ${homeSection({
@@ -72,12 +73,22 @@ module.exports = function (state, emit) {
             'text': 'Dat uses Secure Registers with state of the art cryptography to ensure data can be trusted, archived, and preserved by anyone.'
           }
         ],
-        'cta': {
-          'link': 'http://docs.datproject.org',
-          'text': 'Read the documentation'
-        }
+        cta: cta(state, emit, {
+          id: 'docs-cta',
+          href: 'http://docs.datproject.org',
+          text: 'Read the documentation',
+          klass: 'f5 white bg-animate bg-green hover-bg-dark-green pa3 link'
+        })
       })}
-      ${sponsors('pa2 pa4-m mw8-ns center-ns')}
+      ${sponsors({
+        klass: 'pa2 pa4-m mw8-ns center-ns',
+        cta: cta(state, emit, {
+          id: 'donate-cta',
+          href: 'http://donate.datproject.org',
+          text: 'Donate Today',
+          klass: 'no-underline f4 tc db w-100 pv3 bg-animate bg-green hover-bg-dark-green white'
+        })
+      })}
     </div>
   `)
 }

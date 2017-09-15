@@ -1,6 +1,7 @@
 const html = require('choo/html')
+const cta = require('./cta-btn')
 
-module.exports = function () {
+module.exports = function (state, emit) {
   return html`
     <div class="mt7 mw8 center tl flex flex-row-ns flex-column w-100">
       <div class="flex w-100 w-third-ns bg-white dat-shadow mv4 mh3-l mh1 pa3">
@@ -8,69 +9,84 @@ module.exports = function () {
           <div class="mt3 w3 h3 center">
             <svg><use xlink:href="#daticon-star-dat"/ ></svg>
           </div>
-          <h4 class="f4 mb0 tc small-caps">DatBase</h4>
+          <h4 class="f4 mb0 tc">Data Tools</h4>
           <p class="tc mb0 f7 ttu dat-neutral-70">
-            Distributed Data Preprints
+            Research & Scientific Data
           </p>
           <ul class="dat-list list p0 lh-copy">
             <li class="f5 mb2">
-              <b>Publish when ready:</b> share data privatly until you're ready to publish.
+              <b>Publish Instantly:</b> share data straight from your computer, no more file upload forms.
             </li>
             <li class="f5 mb2">
-              <b>User friendly:</b> simple to use command line tool. Works alognside apps like Dropbox or Google Drive.
+              <b>Use with Git</b>: Dat can manage data alongside a git repository.
             </li>
             <li class="f5 mb2">
-              <b>Reproducible:</b> Persistent identifcation and a full history of changes.
+              <b>User Friendly:</b> a simple to use desktop app or command line tool.
             </li>
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
-            <a class="bg-green white b f5 no-underline b--green ba grow dib v-mid ba ph3 pv2 mb3" href="http://datbase.org">Visit DatBase.org</a>
+            ${cta(state, emit, {
+              href: 'http://datbase.org',
+              klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2 mb3',
+              text: 'Use Dat for Data',
+              id: 'datbase'
+            })}
           </p>
         </div>
       </div>
       <div class="flex w-100 w-third-ns bg-white dat-shadow mv4 mh3-l mh1 pa3">
         <div class="flex-column flex">
           <div class="mt3 w3 h3 center"><svg><use xlink:href="#daticon-network"/ ></svg></div>
-          <h4 class="f4 mb0 tc small-caps">Distributed Web</h4>
+          <h4 class="f4 mb0 tc">Decentralized Web</h4>
           <p class="tc mb0 f7 ttu dat-neutral-70">
             Peer-to-peer websites
           </p>
           <ul class="dat-list list p0 lh-copy">
             <li class="f5 mb2">
-              <b>Beaker Browser:</b> a web browser with first-class support for Dat.
+              <b>Beaker Browser:</b> a first-class distributed web browser built on Dat.
             </li>
             <li class="f5 mb2">
-              <b>Create the web:</b> build & share websites instantly, no host required.
+              <b>Instant Websites:</b> share websites without a host in Dat's network.
             </li>
             <li class="f5 mb2">
-              <b>Secret sharing:</b> use Dat's automatic encryption to publish private URLs.
+              <b>Always compatible:</b> browse any dat via Beaker, regardless of what app created it!
             </li>
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
-            <a class="bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2 mb3" href="http://beakerbrowser.com">Install Beaker Browser</a>
+            ${cta(state, emit, {
+              href: 'http://beakerbrowser.com',
+              klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2 mb3',
+              text: 'Visit Beaker Browser',
+              id: 'beaker'
+            })}
           </p>
         </div>
       </div>
       <div class="flex w-100 w-third-ns bg-white dat-shadow mv4 mh3-l mh1 pa3">
         <div class="flex-column flex">
           <div class="mt3 w3 h3 center"><svg><use xlink:href="#daticon-happy-dat"/ ></svg></div>
-          <h4 class="tc f4 mb0 small-caps">Dat.Land</h4>
+          <h4 class="tc f4 mb0">Dat Community</h4>
           <p class="tc mb0 f7 ttu dat-neutral-70">
-            Dat's Hacker Community
+            Build Custom Dat Apps
           </p>
           <ul class="dat-list list p0 lh-copy">
             <li class="f5 mb2">
-              <b>Open & global:</b> vibrant open source community developing & using Dat.
+              <b>Dat protocol:</b> painless file transfers and distributed streams.
             </li>
             <li class="f5 mb2">
-              <b>Built on Dat:</b> create data-rich applications with Dat's painless file sync & distributed streams.
+              <b>Live sync:</b> build apps with auto-updating & distributed data sharing.
             </li>
             <li class="f5 mb2">
-              <b>Contribute:</b> help us build Dat's core tools and applications!
+              <b>Secure by default:</b> data is encrypted in transfer and content verified on arrival.
             </li>
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
-            <a class="bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2 mb3" href="http://dat.land">Travel to Dat Land</a>
+            ${cta(state, emit, {
+              href: 'http://dat.land',
+              klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2 mb3',
+              text: 'Travel to Dat Land',
+              id: 'dat-land'
+            })}
           </p>
         </div>
       </div>
