@@ -1,12 +1,13 @@
 const html = require('bel')
+const minify = require('html-minifier').minify
 
 module.exports = function (props) {
-  return html`
+  const output = html`
     <!DOCTYPE html>
     <html lang="en">
       <head>
         <meta charset="utf-8" />
-        <title>${props.title || 'Dat Project'}</title>
+        <title>${props.title || 'Dat Project - A Distributed Data Community'}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/fonts/fonts.css">
         <link rel="stylesheet" href="/bundle.css">
@@ -24,17 +25,36 @@ module.exports = function (props) {
     </html>
   `
 
+  return minify(output.toString(), {
+    // options from bankai: https://github.com/choojs/bankai/blob/2b76ce675617e18a9d2c93b961232f2b7395587c/lib/html-minify-stream.js#L8
+    collapseBooleanAttributes: true,
+    collapseInlineTagWhitespace: true,
+    collapseWhitespace: true,
+    conservativeCollapse: true,
+    decodeEntities: true,
+    quoteCharacter: '"',
+    removeComments: true,
+    removeEmptyAttributes: true,
+    removeEmptyElements: true,
+    removeOptionalTags: true,
+    removeRedundantAttributes: true,
+    removeScriptTypeAttributes: true,
+    removeStyleLinkTypeAttributes: true,
+    sortAttributes: true,
+    sortClassName: true,
+    useShortDoctype: true
+  })
+
   function metaTags () {
     const md = {
-      title: props.title || 'Dat Project',
+      title: props.title || 'Dat Project - A Distributed Data Community',
       author: 'Dat Project',
-      description: props.description || 'Dat is the non-profit, secure, and distributed package manager for data.',
+      description: props.description || 'Dat is the nonprofit-backed technology & community for building apps of the future.',
       image: 'https://datproject.org/img/dat-hexagon.png',
       twitterImage: 'https://datproject.org/img/dat-data-logo.png',
       twitterSite: '@dat_project'
     }
     return html`
-      <meta name="title" content="${md.title}" />
       <meta property="og:title" content="${md.title}" />
       <meta name="author" content="${md.author}" />
       <meta name="description" content="${md.description}" />

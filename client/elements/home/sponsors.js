@@ -28,13 +28,13 @@ module.exports = function (props) {
       </header>
       <div class="pt3 flex items-center">
         <a class="inline-flex" href="https://codeforscience.org/">
-          <img src="/img/codeforscience.png" class="code-for-science-logo">
+          <img src="/img/codeforscience.png" class="code-for-science-logo" alt="Code for Science Logo">
         </a>
         <a class="inline-flex" href="https://sloan.org/programs/digital-technology/data-and-computational-research">
-          <img src="/img/sloan.png">
+          <img src="/img/sloan.png" alt="Sloan Foundation Logo">
         </a>
         <a class="inline-flex" href="http://www.knightfoundation.org/grants/201346305/">
-          <img src="/img/knight.png">
+          <img src="/img/knight.png" alt="Knight Foundation Logo">
         </a>
       </div>
       <div class="pv3">

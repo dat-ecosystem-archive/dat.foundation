@@ -7,7 +7,7 @@ module.exports = function (state, emit) {
       <div class="flex w-100 w-third-ns bg-white dat-shadow mv4 mh3-l mh1 pa3">
         <div class="flex-column flex">
           <div class="mt3 w3 h3 center">
-            <svg><use xlink:href="#daticon-star-dat"/ ></svg>
+            <svg><use xlink:href="#daticon-star-dat"/></svg>
           </div>
           <h4 class="f4 mb0 tc">Data Tools</h4>
           <p class="tc mb0 f7 ttu dat-neutral-70">
@@ -36,7 +36,7 @@ module.exports = function (state, emit) {
       </div>
       <div class="flex w-100 w-third-ns bg-white dat-shadow mv4 mh3-l mh1 pa3">
         <div class="flex-column flex">
-          <div class="mt3 w3 h3 center"><svg><use xlink:href="#daticon-network"/ ></svg></div>
+          <div class="mt3 w3 h3 center"><svg><use xlink:href="#daticon-network"/></svg></div>
           <h4 class="f4 mb0 tc">Decentralized Web</h4>
           <p class="tc mb0 f7 ttu dat-neutral-70">
             Peer-to-peer websites
@@ -64,7 +64,7 @@ module.exports = function (state, emit) {
       </div>
       <div class="flex w-100 w-third-ns bg-white dat-shadow mv4 mh3-l mh1 pa3">
         <div class="flex-column flex">
-          <div class="mt3 w3 h3 center"><svg><use xlink:href="#daticon-happy-dat"/ ></svg></div>
+          <div class="mt3 w3 h3 center"><svg><use xlink:href="#daticon-happy-dat"/></svg></div>
           <h4 class="tc f4 mb0">Dat Community</h4>
           <p class="tc mb0 f7 ttu dat-neutral-70">
             Build Custom Dat Apps

@@ -1,7 +1,8 @@
-const redirect = require('express-simple-redirect')
-const compression = require('compression')
+const fs = require('fs')
 const path = require('path')
 const express = require('express')
+const redirect = require('express-simple-redirect')
+const compression = require('compression')
 const client = require('./client')
 
 const app = express()
@@ -11,35 +12,40 @@ app.engine('js', function (filePath, options, cb) {
   const renderer = require(filePath)
   if (!renderer) return cb(new Error('not found'))
   const contents = renderer(options)
-  cb(null, contents.toString())
+  cb(null, contents)
 })
 app.set('views', './views')
 app.set('view engine', 'js')
 
 app.use(compression())
 
+// Redirects
 // TODO: Redirect registry API
 app.use(redirect({
-  '/blog': 'https://blog.datproject.org'
+  '/blog': 'https://blog.datproject.org',
+  '/install': 'https://docs.datproject.org/install'
 }, 301))
+app.get('/blog/*', function (req, res) {
+  res.redirect(301, 'http://blog.datproject.org')
+})
 
-// Opts passed to template: views/page
-app.get('/', getRoute({
-  title: 'Welcome to Dat Project!'
-}))
+// Static Routes
+// Options passed to template: views/page
+app.get('/', getRoute())
 app.get('/about', getRoute({
   title: 'About - Dat Project'
 }))
+app.get('/paper', function (req, res) {
+  fs.createReadStream(path.join(__dirname, 'public', 'dat-paper.pdf')).pipe(res)
+})
+
+// Static Files
 app.use('/', express.static(path.join(__dirname, 'public')))
+
+// 404 Error
 app.use(function (req, res, next) {
   res.status(404)
   getRoute({title: '404 - Dat Page Not Found'})(req, res)
-})
-
-// TODO: Redirect registry API
-// What is difference b/t this and above redirect?
-app.get('/blog/*', function (req, res) {
-  res.redirect(301, 'http://blog.datproject.org')
 })
 
 function getRoute (opts) {

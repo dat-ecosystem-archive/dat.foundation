@@ -22,11 +22,11 @@ module.exports = function (state, emit) {
       <section class="${splash} bg-neutral pb4 white cover" style="background-image: url(${backgroundImageUrl})">
         <header class="tc ph5 lh-copy">
           <h1 class="f1 f-headline-l code mb3 fw9 dib tracked-tight green">
-            dat
-            <div class="dib-ns w3 h3 dn center"><svg><use xlink:href="#daticon-sad-dat"/ ></svg></div>
+            Dat
+            <div class="dib-ns w3 h3 dn center"><svg><use xlink:href="#daticon-sad-dat"/></svg></div>
             404
           </h1>
-          <h2 class="tc f1-l fw1 mt5-l">The page you seek does not exist right now.</h2>
+          <h2 class="tc f1-l fw1 mt5-l">The page you seek does not exist.</h2>
         </header>
         <p class="fw1 i tc mt4 mt5-l f4 f3-l">Are you looking for one of these?</p>
         <ul class="list tc pl0 w-100 mt5">
