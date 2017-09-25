@@ -52,6 +52,11 @@ a {
   color: var(--green);
 }
 
+::selection {
+  text-shadow: none;
+  background: var(--green-disabled);
+}
+
 /*
   BORDER COLOR
  */

@@ -47,7 +47,7 @@ module.exports = function (props) {
           <h2 class="f2 mb0">${props.title}</h2>
           ${subtitle}
         </header>
-        <div class="pt3 cf">
+        <div class="pv3 cf">
           ${props.sections.map((section) => {
             return textSection(section)
           })}
@@ -60,7 +60,7 @@ module.exports = function (props) {
   function cta () {
     if (!props.cta) return
     return html`
-      <p class="pv4">
+      <p class="pv3 mb4">
         ${props.cta}
       </p>
     `
@@ -71,7 +71,7 @@ module.exports = function (props) {
     text.innerHTML = item.text
     return html`
       <div class="fl w-third-ns w-100">
-        <h3 class="f3">${item.title}</h3>
+        <h3 class="f3 mt0">${item.title}</h3>
         ${text}
       </div>
     `

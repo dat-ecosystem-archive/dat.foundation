@@ -31,46 +31,70 @@ module.exports = function (state, emit) {
     <div>
       <div class="${splash} mh2 mh4-l center contain" style="background-image: url(${backgroundImageUrl})">
         <section class="tc pa3 pt5-ns">
-          <h1 class="f2 f1-l mb0 lh-title">A distributed <span class="color-green">dat</span>a community</h1>
-          <h2 class="f3 mt3 mb4 color-neutral-50 fw2">Dat is the nonprofit-backed technology & community for building apps of the future.</h2>
+          <h1 class="f2 f1-l mb0 lh-title">
+            A distributed <span class="color-green">dat</span>a community
+          </h1>
+          <h2 class="f3 mt3 mb3 color-neutral-50 fw2">
+            Dat is a nonprofit-backed community & open protocol for building apps of the future.
+          </h2>
           ${callout(state, emit)}
         </section>
       </div>
       ${homeSection({
         'bgColor': 'bg-neutral-04',
-        'title': 'Lorem Ipsum',
-        'subtitle': 'Some catchy subtitle',
+        'title': 'Imagining a better future',
+        'subtitle': `
+          Along the way of building the future we got lost.
+          We need public technology driven by communities and humans.
+        `,
         'sections': [
           {
-            'title': 'First Section',
-            'text': 'asdfasdfa'
+            'title': 'Human Technology',
+            'text': `
+              We believe that not-for-profit and human-driven technology will be the future of the open web.
+              We design for humans and social wellbeing before profit or technical curiosity.
+            `
           },
           {
-            'title': 'Second Section',
-            'text': 'asdf'
+            'title': 'User-First Applications',
+            'text': `
+              User security and privacy take priority in the Dat Protocol.
+              Applications using Dat get encrpyted transfer, private data sharing, and content verification built-in.
+            `
           },
           {
-            'title': 'Last Section',
-            'text': 'asdfasdf'
+            'title': 'Public Infrastructure',
+            'text': `
+              Existing Internet infrastructure was funded and built for the public.
+              Large monopolies now control the web.
+              Can we imagine a new model for technology infrastructure?
+            `
           }
         ]
       })}
       ${homeSection({
         'bgColor': 'bg-neutral',
-        'title': 'Built With Care',
-        'subtitle': 'Dat is built within a vibrant open source module-based ecosystem. <a href="/paper">Read the paper</a>.',
+        'title': 'Why use Dat Protocol?',
+        'subtitle': `
+          We set out to improve access to public data and created a new protocol along the way.
+          Learn more in the <a class="link" href="/paper">Dat paper</a>.
+        `,
         'sections': [
           {
             'title': 'Distributed Sync',
-            'text': 'Dat syncs and streams data directly between devices, putting you in control of where your data goes.'
+            'text': 'Modeled after the best parts of Git, BitTorrent, and the internet, the Dat Protocol is a peer-to-peer protocol for syncing files and data across distributed networks.'
+          },
+          {
+            'title': 'Faster Speeds',
+            'text': `
+              Improving speeds while using less bandwidth sounds impossible.
+              The Dat Protocol makes it the default by using a peer-to-peer network.
+              Seamlessly add or remove hosts as needed.
+            `
           },
           {
             'title': 'Efficient Storage',
             'text': 'Data is deduplicated between versions, reducing bandwidth costs and improving speed.'
-          },
-          {
-            'title': 'Secure Preservation',
-            'text': 'Dat uses Secure Registers with state of the art cryptography to ensure data can be trusted, archived, and preserved by anyone.'
           }
         ],
         cta: cta(state, emit, {
