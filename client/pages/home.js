@@ -17,7 +17,7 @@ module.exports = function (state, emit) {
       }
 
       background-repeat: no-repeat;
-      background-position: center 275px;
+      background-position: center 225px;
 
       @media screen and (min-width: 30em) {
         /* ns - not small breakpoint from tachyons */
@@ -70,7 +70,13 @@ module.exports = function (state, emit) {
               Can we imagine a new model for technology infrastructure?
             `
           }
-        ]
+        ],
+        cta: cta(state, emit, {
+          id: 'blog-cta',
+          href: 'http://blog.datproject.org',
+          text: 'Learn More on Dat Blog',
+          klass: 'f5 white bg-animate bg-green hover-bg-dark-green pa3 link'
+        })
       })}
       ${homeSection({
         'bgColor': 'bg-neutral',
@@ -105,7 +111,7 @@ module.exports = function (state, emit) {
         })
       })}
       ${sponsors({
-        klass: 'pa2 pa4-m mw8-ns center-ns',
+        klass: 'pv2 ph3 pa4-m mw8-ns center-ns',
         cta: cta(state, emit, {
           id: 'donate-cta',
           href: 'http://donate.datproject.org',

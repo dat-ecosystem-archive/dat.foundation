@@ -3,19 +3,20 @@ const html = require('choo/html')
 module.exports = function () {
   return html`
   <footer class="bg-neutral white">
-    <section class="pa2 ph4-m mw8-ns center-ns">
+    <section class="pv2 ph3 pa4-m mw8-ns center-ns">
       <div class="pt2 cf">
         <div class="fl w-third">
           <h4 class="f4 horizontal-rule-footer">Explore</h4>
           <ul class="dat-list p0 list lh-copy">
-            ${liLink('/explore', 'Explore Datasets')}
-            ${liLink('https://blog.datproject.org', 'Dat Blog')}
+            ${liLink('https://blog.datproject.org', 'Blog')}
+            ${liLink('https://datbase.org', 'DatBase')}
+            ${liLink('https://dat.land', 'Community')}
           </ul>
         </div>
         <div class="fl w-third">
           <h4 class="f4 horizontal-rule-footer">Learn</h4>
           <ul class="dat-list p0 list lh-copy">
-            ${liLink('/about', 'About Dat')}
+            ${liLink('/about', 'About')}
             ${liLink('http://docs.datproject.org', 'Docs')}
           </ul>
         </div>

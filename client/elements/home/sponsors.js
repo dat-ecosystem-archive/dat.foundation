@@ -4,18 +4,6 @@ const css = require('sheetify')
 module.exports = function (props) {
   const elCss = css`
     :host {
-      a {
-        display: block;
-        padding: 1rem;
-      }
-      img {
-        max-width: 220px;
-        display: block;
-        margin: 0 auto;
-      }
-      .code-for-science-logo {
-        max-width: 130px;
-      }
     }
   `
 
@@ -25,17 +13,17 @@ module.exports = function (props) {
         <h2 class="f2 mb0">Sponsors and Supporters</h2>
         <p class="f4 mt1 color-neutral-70 horizontal-rule">Dat is developed by the non-profit group Code for Science & Society and supported by generous sponsors.</p>
       </header>
-      <div class="pt3 flex items-center">
-        <a class="inline-flex" href="https://codeforscience.org/" title="Code for Science and Society">
-          <img src="/img/codeforscience.png" class="code-for-science-logo" alt="Code for Science and Society">
+      <div class="pt3 flex flex-wrap w-100">
+        <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://codeforscience.org/" title="Code for Science and Society">
+          <img class="h4 w-auto" src="/img/codeforscience.png" alt="Code for Science and Society">
         </a>
-        <a class="inline-flex" href="https://sloan.org/programs/digital-technology/data-and-computational-research" title="Dat Project Grant - Alfred P. Sloan Foundation">
+        <a class="inline-flex items-center mv2 mh3" href="https://sloan.org/programs/digital-technology/data-and-computational-research" title="Dat Project Grant - Alfred P. Sloan Foundation">
           <img class="h3 w-auto" src="/img/sloan.png" alt="Alfred P. Sloan Foundation">
         </a>
-        <a class="inline-flex" href="http://www.knightfoundation.org/grants/201346305/" title="Dat Project Grant - John S. and James L. Knight Foundation">
+        <a class="inline-flex items-center mv2 mh3" href="http://www.knightfoundation.org/grants/201346305/" title="Dat Project Grant - John S. and James L. Knight Foundation">
           <img class="h3 w-auto"  src="/img/knight.png" alt="John S. and James L. Knight Foundation">
         </a>
-        <a class="inline-flex" href="https://www.moore.org/" title="Gordon and Betty Moore Foundation">
+        <a class="inline-flex items-center mv2 mh3" href="https://www.moore.org/" title="Gordon and Betty Moore Foundation">
           <img class="h3 w-auto" src="/img/moore.png" alt="Gordon and Betty Moore Foundation">
         </a>
       </div>

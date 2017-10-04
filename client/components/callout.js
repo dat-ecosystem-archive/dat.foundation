@@ -3,8 +3,8 @@ const cta = require('./cta-btn')
 
 module.exports = function (state, emit) {
   return html`
-    <div class="mt7 mw8 center tl flex flex-row-ns flex-column w-100">
-      <div class="flex w-100 w-third-ns bg-white dat-shadow mv4 mh3-l mh1 pa3">
+    <div class="mt7-ns mt5 mw8 center tl flex flex-row-ns flex-column w-100">
+      <div class="flex w-100 w-third-ns bg-white dat-shadow mv4-ns mv2 mh3-l mh1-ns pa3">
         <div class="flex-column flex">
           <div class="mt3 w3 h3 center">
             <svg><use xlink:href="#daticon-star-dat"/></svg>
@@ -24,14 +24,14 @@ module.exports = function (state, emit) {
           <p class="tr mb0" style="margin-top:auto;">
             ${cta(state, emit, {
               href: 'http://datbase.org',
-              klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2 mb3',
+              klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
               text: 'Learn More',
               id: 'datbase'
             })}
           </p>
         </div>
       </div>
-      <div class="flex w-100 w-third-ns bg-white dat-shadow mv4 mh3-l mh1 pa3">
+      <div class="flex w-100 w-third-ns bg-white dat-shadow mv4-ns mv2 mh3-l mh1-ns pa3">
         <div class="flex-column flex">
           <div class="mt3 w3 h3 center"><svg><use xlink:href="#daticon-happy-dat"/></svg></div>
           <h4 class="tc f4 mb0">Dat Protocol</h4>
@@ -49,14 +49,14 @@ module.exports = function (state, emit) {
           <p class="tr mb0" style="margin-top:auto;">
             ${cta(state, emit, {
               href: 'http://dat.land',
-              klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2 mb3',
+              klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
               text: 'Build on Dat',
               id: 'dat-land'
             })}
           </p>
         </div>
       </div>
-      <div class="flex w-100 w-third-ns bg-white dat-shadow mv4 mh3-l mh1 pa3">
+      <div class="flex w-100 w-third-ns bg-white dat-shadow mv4-ns mv2 mh3-l mh1-ns pa3">
         <div class="flex-column flex">
           <div class="mt3 w3 h3 center"><svg><use xlink:href="#daticon-network"/></svg></div>
           <h4 class="f4 mb0 tc">Decentralized Web</h4>
@@ -74,7 +74,7 @@ module.exports = function (state, emit) {
           <p class="tr mb0" style="margin-top:auto;">
             ${cta(state, emit, {
               href: 'http://beakerbrowser.com',
-              klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2 mb3',
+              klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
               text: 'Visit Beaker Browser',
               id: 'beaker'
             })}

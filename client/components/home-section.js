@@ -60,7 +60,7 @@ module.exports = function (props) {
   function cta () {
     if (!props.cta) return
     return html`
-      <p class="pv3 mb4">
+      <p class="pv3-ns mb4">
         ${props.cta}
       </p>
     `
