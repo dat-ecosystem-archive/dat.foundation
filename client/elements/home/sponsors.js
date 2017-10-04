@@ -9,7 +9,6 @@ module.exports = function (props) {
         padding: 1rem;
       }
       img {
-        width: 100%;
         max-width: 220px;
         display: block;
         margin: 0 auto;
@@ -27,14 +26,17 @@ module.exports = function (props) {
         <p class="f4 mt1 color-neutral-70 horizontal-rule">Dat is developed by the non-profit group Code for Science & Society and supported by generous sponsors.</p>
       </header>
       <div class="pt3 flex items-center">
-        <a class="inline-flex" href="https://codeforscience.org/">
-          <img src="/img/codeforscience.png" class="code-for-science-logo" alt="Code for Science Logo">
+        <a class="inline-flex" href="https://codeforscience.org/" title="Code for Science and Society">
+          <img src="/img/codeforscience.png" class="code-for-science-logo" alt="Code for Science and Society">
         </a>
-        <a class="inline-flex" href="https://sloan.org/programs/digital-technology/data-and-computational-research">
-          <img src="/img/sloan.png" alt="Sloan Foundation Logo">
+        <a class="inline-flex" href="https://sloan.org/programs/digital-technology/data-and-computational-research" title="Dat Project Grant - Alfred P. Sloan Foundation">
+          <img class="h3 w-auto" src="/img/sloan.png" alt="Alfred P. Sloan Foundation">
         </a>
-        <a class="inline-flex" href="http://www.knightfoundation.org/grants/201346305/">
-          <img src="/img/knight.png" alt="Knight Foundation Logo">
+        <a class="inline-flex" href="http://www.knightfoundation.org/grants/201346305/" title="Dat Project Grant - John S. and James L. Knight Foundation">
+          <img class="h3 w-auto"  src="/img/knight.png" alt="John S. and James L. Knight Foundation">
+        </a>
+        <a class="inline-flex" href="https://www.moore.org/" title="Gordon and Betty Moore Foundation">
+          <img class="h3 w-auto" src="/img/moore.png" alt="Gordon and Betty Moore Foundation">
         </a>
       </div>
       <div class="pv3">
