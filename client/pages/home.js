@@ -52,7 +52,7 @@ module.exports = function (state, emit) {
             'title': 'Human Technology',
             'text': `
               We believe that not-for-profit and human-driven technology will be the future of the open web.
-              We design for humans and social wellbeing before profit or technical curiosity.
+              We must also nurture an inclusive community creating fair technology.
             `
           },
           {
@@ -100,7 +100,7 @@ module.exports = function (state, emit) {
           },
           {
             'title': 'Efficient Storage',
-            'text': 'Data is deduplicated between versions, reducing bandwidth costs and improving speed.'
+            'text': 'Data is deduplicated between versions, reducing bandwidth costs and improving speed. Developers can create custom storage that work over a variety of protocols.'
           }
         ],
         cta: cta(state, emit, {
