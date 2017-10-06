@@ -26,7 +26,13 @@ app.use(redirect({
   '/install': 'https://docs.datproject.org/install'
 }, 301))
 app.get('/blog/*', function (req, res) {
-  res.redirect(301, 'http://blog.datproject.org')
+  res.redirect(301, 'https://blog.datproject.org')
+})
+app.get('/api/*', function (req, res) {
+  res.redirect(301, 'https://datbase.org' + req.url)
+})
+app.get('/dat://:archiveKey', function (req, res) {
+  res.redirect(301, 'https://datbase.org' + req.url)
 })
 
 // Static Routes
