@@ -6,7 +6,7 @@ module.exports = function () {
 
   return html`
     <div>
-      <h2 class="horizontal-rule">Development Team</h2>
+      <h2 class="horizontal-rule">Team</h2>
       <div class="${flexClass} w-100">
         ${teamInfo.current.map((person) => {
           return personBox(person)

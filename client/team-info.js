@@ -3,7 +3,8 @@ module.exports = {
     {name: 'Max Ogden', github: 'maxogden', description: 'Programmer based in Portland, OR. Max works on or has worked on things like <a href="http://csvconf.com/">CSVConf</a>, <a href="http://codeforamerica.org/">Code for America</a>, <a href="http://jsforcats.com/">JavaScript for Cats</a>, and <a href="http://voxeljs.com/">Voxel.js</a>.'},
     {name: 'Mathias Buus', github: 'mafintosh', description: 'Programmer based in Copenhagen, Denmark. Co-creator of <a href="http://node-modules.com">node-modules.com</a> and co-founder of <a href="http://ge.tt/">ge.tt</a>. open mouth, open source.'},
     {name: 'Karissa McKelvey', github: 'karissa', description: 'Programmer and data scientist based in Oakland, CA. Former <a href="http://scholar.google.com/citations?user=RM2tB8EAAAAJ&hl=en">academic</a> experienced in building interactive data visualization and collaboration tools.'},
-    {name: 'Joe Hand', github: 'joehand', description: 'Programmer and open data enthusiast based in Portland, OR. Joe previously <a href="http://santafe.edu/research/informal-settlements/">built tools</a> for communities in informal settlements worldwide to collect data.'}
+    {name: 'Joe Hand', github: 'joehand', description: 'Programmer and open data enthusiast based in Portland, OR. Joe previously <a href="http://santafe.edu/research/informal-settlements/">built tools</a> for communities in informal settlements worldwide to collect data.'},
+    {name: 'Danielle Robinson, PhD', github: 'daniellecrobinson', description: 'Scientific and Partnerships Director at Code for Science & Society. Open science advocate and data enthusiast who believes in the power of open communities, former neuroscience researcher.'}
   ],
   'advisors': [
     {name: 'Kristen Ratan', github: 'kristenratan', description: 'Co-Founder of the Collaborative Knowledge Foundation, a nonprofit with a mission to evolve how knowledge is created, produced, and shared.'},
