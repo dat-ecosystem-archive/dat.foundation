@@ -16,7 +16,6 @@ module.exports = function (state, emitter) {
   emitter.on(state.events.NAVIGATE, trackView)
   emitter.on(state.events.TRACK_CTA, trackCta)
   emitter.on(state.events.NAVIGATE, trackExit)
-  window.onbeforeunload = trackExit
 
   // todo: better way to track viewing + clicking specific els?
   emitter.on(state.events.TRACK_CTAEL, function (el) {
@@ -26,6 +25,7 @@ module.exports = function (state, emitter) {
   emitter.emit('log:info', `Sending analytics to ${process.env.ANALYTICS}`)
 
   function trackInbound () {
+    window.onbeforeunload = trackExit
     analytics.append(setDefaults('pageView', {
       sourceUrl: document.referrer
     }))
