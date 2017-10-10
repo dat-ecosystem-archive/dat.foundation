@@ -8,7 +8,6 @@ module.exports = function () {
         <div class="fl w-third">
           <h4 class="f4 horizontal-rule-footer">Explore</h4>
           <ul class="dat-list p0 list lh-copy">
-            ${liLink('https://blog.datproject.org', 'Blog')}
             ${liLink('https://datbase.org', 'DatBase')}
             ${liLink('https://dat.land', 'Community')}
           </ul>
@@ -17,6 +16,7 @@ module.exports = function () {
           <h4 class="f4 horizontal-rule-footer">Learn</h4>
           <ul class="dat-list p0 list lh-copy">
             ${liLink('/about', 'About')}
+            ${liLink('https://blog.datproject.org', 'Blog')}
             ${liLink('http://docs.datproject.org', 'Docs')}
           </ul>
         </div>
