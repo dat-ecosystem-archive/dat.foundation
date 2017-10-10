@@ -34,7 +34,7 @@ module.exports = function (state, emit) {
             In the spring of 2014, we received additional support <a href="https://blog.datproject.org/2014/03/08/sloan-funding/">support from the Alfred P. Sloan foundation</a> to expand the team. Sloan’s proposition was that they like the initial Dat prototype, but wanted to see scientific data use cases be treated as top priority. As a result we expanded the scope of the project from its tabular data specific beginnings, and have focused on adding features that will help us work with larger open scientific datasets. Sloan redoubled their support in the spring of 2015, allowing us to continue to fund three positions for another two years.
           </p>
           <p class="${copyClass}">
-            In the winter of 2016, the Knight Foundation provided significant funding to <a href="https://blog.datproject.org/2016/02/01/announcing-publicbits-org/">create a registry for Dat-hosted datasets</a>, as well as enabling the project to grow and establish a 501(c)(3) non-profit.
+            In the winter of 2016, the Knight Foundation provided significant funding to <a href="https://blog.datproject.org/2016/02/01/announcing-publicbits-org/">create a registry for Dat-hosted datasets</a>, as well as enabling the project to grow and establish a 501(c)(3) non-profit. In the fall of 2017, the Moore Foundation funded a project to advance the use of Dat in research through a pilot project called <a href="https://blog.datproject.org/2017/09/14/dat-in-the-lab/">Dat in the Lab</a>.
           </p>
         </article>
       </section>
