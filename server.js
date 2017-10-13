@@ -20,11 +20,7 @@ app.set('view engine', 'js')
 app.use(compression())
 
 // Redirects
-// TODO: Redirect registry API
-app.use(redirect({
-  '/blog': 'https://blog.datproject.org',
-  '/install': 'https://docs.datproject.org/install'
-}, 301))
+app.use(redirect(require('./redirects.json'), 301))
 app.get('/blog/*', function (req, res) {
   res.redirect(301, 'https://blog.datproject.org')
 })
