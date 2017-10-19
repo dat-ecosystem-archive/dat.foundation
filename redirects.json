@@ -1,5 +1,7 @@
 {
   "/blog": "https://blog.datproject.org",
   "/blog/2016-12-18-p2p-reader-privacy": "https://blog.datproject.org/2016/12/12/reader-privacy-on-the-p2p-web/",
-  "/install": "https://docs.datproject.org/install"
+  "/install": "https://docs.datproject.org/install",
+  "/team": "/about#team",
+  "/explore": "https://datbase.org"
 }

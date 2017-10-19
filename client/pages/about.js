@@ -39,7 +39,7 @@ module.exports = function (state, emit) {
         </article>
       </section>
       <section class="bg-neutral-04">
-        <div class="${wrapper}">
+        <div class="${wrapper}" id="team">
           ${team()}
         </div>
       </section>

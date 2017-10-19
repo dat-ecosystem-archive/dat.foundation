@@ -12,7 +12,7 @@ module.exports = {
     {name: 'Richard Smith-Unna', github: 'blahah', description: 'Lead developer on ScienceFair. A biologist, hacker, and PhD student in Plant Sciences in the Hibberd Lab at the University of Cambridge. A <a href="http://rik.smith-unna.com/2015/10/07/i-am-now-a-mozilla-science-fellow/">Mozilla Fellow for Science</a> for 2015-16.'},
     {name: 'Kaitlin Thaney', github: 'kaythaney', description: 'Endowment director, at Wikimedia Foundation. Previously, director, Mozilla Science Lab (<a href="http://twitter.com/mozillascience">@MozillaScience</a>). Using data for good at <a href="http://twitter.com/datakindUK">@datakindUK</a>, frequent flyer, and other general geekery.'}
   ],
-  'alumni': [,
+  'alumni': [
     {name: 'Yoshua Wuyts', github: 'yoshuawuyts', description: '✨ 🚂 ✌️'},
     {name: 'Kristina Schneider', github: 'kriesse', description: 'Designer based in Berlin, Germany. Kriesse organizes community events like <a href="http://www.cssconf.eu/">CSSconf EU</a>, <a href="http://cssclass.es">CSSclasses</a> and <a href="http://up.front.ug/">upfront.ug</a>.'},
     {name: 'Julian Gruber', github: 'juliangruber', description: 'Programmer traveling the world. Contributor to projects like <a href="https://nodejs.org">Node.js</a> and <a href="https://leveldb.org/">LevelDB</a>. Has a strong drive to rid humanity of redundant work and empower everyone to think big.'},

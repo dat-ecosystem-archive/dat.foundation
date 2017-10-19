@@ -24,6 +24,7 @@ const views = {
 // wrap views in body we can mount to view template
 app.route('/', wrap('home'))
 app.route('/about', wrap('about'))
+app.route('/about/team', wrap('about')) // for `/about#team` - seems weird, bug?
 
 // error route
 app.route('*', wrap('default'))

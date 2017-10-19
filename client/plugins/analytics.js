@@ -86,7 +86,7 @@ module.exports = function (state, emitter) {
 
   function setDefaults (name, opts) {
     return Object.assign({
-      event: `${window.location.hostname}-${name}`,
+      event: `${window.location.host}-${name}`,
       pathname: window.location.pathname
     }, opts)
   }

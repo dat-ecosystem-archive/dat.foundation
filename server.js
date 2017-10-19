@@ -27,8 +27,11 @@ app.get('/blog/*', function (req, res) {
 app.get('/api/*', function (req, res) {
   res.redirect(301, 'https://datbase.org' + req.url)
 })
-app.get('/dat://:archiveKey', function (req, res) {
+app.get('/dat://:archiveKey*', function (req, res) {
   res.redirect(301, 'https://datbase.org' + req.url)
+})
+app.get(/\/?([^/]{64})(\/.*)?/, function (req, res) {
+  res.redirect(301, 'https://datbase.org/dat:/' + req.url)
 })
 
 // Static Routes
