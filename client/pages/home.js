@@ -35,8 +35,15 @@ module.exports = function (state, emit) {
             A distributed <span class="color-green">dat</span>a community
           </h1>
           <h2 class="f3 mt3 mb3 color-neutral-50 fw2">
-            Dat is a nonprofit-backed community & open protocol for building apps of the future.
+            Dat is a nonprofit-backed data sharing protocol for applications of the future.
           </h2>
+
+          ${cta(state, emit, {
+            href: 'https://docs.datproject.org',
+            klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
+            text: 'Get Started',
+            id: 'install'
+          })}
           ${callout(state, emit)}
         </section>
       </div>
