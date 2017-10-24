@@ -87,7 +87,7 @@ module.exports = function (state, emit) {
             target="_blank"
             rel="noopener noreferrer"
             class="link"
-            href="https://github.com/datproject/docs/raw/master/papers/dat-paper.pdf"
+            href="/paper"
             >Dat paper</a>.
         `,
         'sections': [
