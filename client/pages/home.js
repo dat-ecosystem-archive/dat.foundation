@@ -59,7 +59,7 @@ module.exports = function (state, emit) {
             'title': 'User-First Applications',
             'text': `
               User security and privacy take priority in the Dat Protocol.
-              Applications using Dat get encrpyted transfer, private data sharing, and content verification built-in.
+              Applications using Dat get encrypted transfer, private data sharing, and content verification built-in.
             `
           },
           {
