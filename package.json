@@ -22,7 +22,7 @@
   "devDependencies": {
     "bankai": "^8.1.1",
     "dependency-check": "^2.9.1",
-    "fair-analytics": "^1.2.1",
+    "fair-analytics": "^1.2.2",
     "standard": "^7.1.2"
   },
   "dependencies": {
