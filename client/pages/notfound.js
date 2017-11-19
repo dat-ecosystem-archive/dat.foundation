@@ -32,8 +32,8 @@ module.exports = function (state, emit) {
         <ul class="list tc pl0 w-100 mt5">
           <li class="dib"><a class="f5 f4-ns link color-green db pv2 ph3 hover-color-green-hover" href="/">Dat Home</a></li>
           <li class="dib"><a class="f5 f4-ns link color-blue db pv2 ph3 hover-color-blue-hover" href="/about">About</a></li>
-          <li class="dib"><a class="f5 f4-ns link color-red db pv2 ph3 hover-color-red-hover" href="http://blog.datproject.org">Blog</a></li>
-          <li class="dib"><a class="f5 f4-ns link color-yellow db pv2 ph3 hover-color-yellow-hover" href="http://docs.datproject.org">Documentation</a></li>
+          <li class="dib"><a class="f5 f4-ns link color-red db pv2 ph3 hover-color-red-hover" href="https://blog.datproject.org">Blog</a></li>
+          <li class="dib"><a class="f5 f4-ns link color-yellow db pv2 ph3 hover-color-yellow-hover" href="https://docs.datproject.org">Documentation</a></li>
          </ul>
       </section>
     </div>
