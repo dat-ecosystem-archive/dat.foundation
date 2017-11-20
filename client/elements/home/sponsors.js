@@ -20,7 +20,7 @@ module.exports = function (props) {
         <a class="inline-flex items-center mv2 mh3" href="https://sloan.org/programs/digital-technology/data-and-computational-research" title="Dat Project Grant - Alfred P. Sloan Foundation">
           <img class="h3 w-auto" src="/img/sloan.png" alt="Alfred P. Sloan Foundation">
         </a>
-        <a class="inline-flex items-center mv2 mh3" href="http://www.knightfoundation.org/grants/201346305/" title="Dat Project Grant - John S. and James L. Knight Foundation">
+        <a class="inline-flex items-center mv2 mh3" href="https://www.knightfoundation.org/grants/201346305/" title="Dat Project Grant - John S. and James L. Knight Foundation">
           <img class="h3 w-auto"  src="/img/knight.png" alt="John S. and James L. Knight Foundation">
         </a>
         <a class="inline-flex items-center mv2 mh3" href="https://www.moore.org/" title="Gordon and Betty Moore Foundation">

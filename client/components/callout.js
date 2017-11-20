@@ -23,7 +23,7 @@ module.exports = function (state, emit) {
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
             ${cta(state, emit, {
-              href: 'http://datbase.org',
+              href: 'https://datbase.org',
               klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
               text: 'Learn More',
               id: 'datbase'
@@ -48,7 +48,7 @@ module.exports = function (state, emit) {
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
             ${cta(state, emit, {
-              href: 'http://dat.land',
+              href: 'https://dat.land',
               klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
               text: 'Build on Dat',
               id: 'dat-land'
@@ -73,7 +73,7 @@ module.exports = function (state, emit) {
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
             ${cta(state, emit, {
-              href: 'http://beakerbrowser.com',
+              href: 'https://beakerbrowser.com',
               klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
               text: 'Visit Beaker Browser',
               id: 'beaker'

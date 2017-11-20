@@ -28,7 +28,7 @@ module.exports = function (state, emit) {
             Dat History
           </h2>
           <p class="${copyClass}">
-            The first code went into Dat <a href="https://github.com/datproject/dat/commit/e5eda57b53f60b05c0c3d97da90c10cd17dcbe19">on August 17, 2013</a>. The first six months were spent making a prototype (thanks to the <a href="http://www.knightfoundation.org/grants/201346305/">John S. and James L. Knight foundation Prototype Fund</a>), followed by taking Dat beyond the prototype phase and into an alpha release.
+            The first code went into Dat <a href="https://github.com/datproject/dat/commit/e5eda57b53f60b05c0c3d97da90c10cd17dcbe19">on August 17, 2013</a>. The first six months were spent making a prototype (thanks to the <a href="https://www.knightfoundation.org/grants/201346305/">John S. and James L. Knight foundation Prototype Fund</a>), followed by taking Dat beyond the prototype phase and into an alpha release.
           </p>
           <p class="${copyClass}">
             In the spring of 2014, we received additional support <a href="https://blog.datproject.org/2014/03/08/sloan-funding/">support from the Alfred P. Sloan foundation</a> to expand the team. Sloan’s proposition was that they like the initial Dat prototype, but wanted to see scientific data use cases be treated as top priority. As a result we expanded the scope of the project from its tabular data specific beginnings, and have focused on adding features that will help us work with larger open scientific datasets. Sloan redoubled their support in the spring of 2015, allowing us to continue to fund three positions for another two years.

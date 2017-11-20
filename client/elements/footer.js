@@ -17,7 +17,7 @@ module.exports = function () {
           <ul class="dat-list p0 list lh-copy">
             ${liLink('/about', 'About')}
             ${liLink('https://blog.datproject.org', 'Blog')}
-            ${liLink('http://docs.datproject.org', 'Docs')}
+            ${liLink('https://docs.datproject.org', 'Docs')}
           </ul>
         </div>
         <div class="fl w-third">

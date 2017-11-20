@@ -73,7 +73,7 @@ module.exports = function (state, emit) {
         ],
         cta: cta(state, emit, {
           id: 'blog-cta',
-          href: 'http://blog.datproject.org',
+          href: 'https://blog.datproject.org',
           text: 'Learn More on Dat Blog',
           klass: 'f5 white bg-animate bg-green hover-bg-dark-green pa3 link'
         })
@@ -110,7 +110,7 @@ module.exports = function (state, emit) {
         ],
         cta: cta(state, emit, {
           id: 'docs-cta',
-          href: 'http://docs.datproject.org',
+          href: 'https://docs.datproject.org',
           text: 'Read the documentation',
           klass: 'f5 white bg-animate bg-green hover-bg-dark-green pa3 link'
         })
@@ -119,7 +119,7 @@ module.exports = function (state, emit) {
         klass: 'pv2 ph3 pa4-m mw8-ns center-ns',
         cta: cta(state, emit, {
           id: 'donate-cta',
-          href: 'http://donate.datproject.org',
+          href: 'https://donate.datproject.org',
           text: 'Donate Today',
           klass: 'no-underline f4 tc db w-100 pv3 bg-animate bg-green hover-bg-dark-green white'
         })
