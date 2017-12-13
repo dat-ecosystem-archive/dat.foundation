@@ -39,9 +39,9 @@ module.exports = function (state, emit) {
           </h2>
 
           ${cta(state, emit, {
-            href: 'https://docs.datproject.org',
+            href: 'https://docs.datproject.org/install',
             klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
-            text: 'Get Started',
+            text: 'Install Now',
             id: 'install'
           })}
           ${callout(state, emit)}

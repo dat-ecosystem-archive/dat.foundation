@@ -11,11 +11,11 @@ module.exports = function (state, emit) {
           </div>
           <h4 class="f4 mb0 tc">Dat Base</h4>
           <p class="tc mb0 f7 ttu dat-neutral-70">
-            A Public Dat Peer
+            Dat for Researchers
           </p>
           <ul class="dat-list list p0 lh-copy">
             <li class="f5 mb2">
-              <b>Open Data:</b> archive, catalogue, and share datasets for data pipelines.
+              <b>Open Data:</b> archive, catalogue, and share data pipelines.
             </li>
             <li class="f5 mb2">
               <b>Public Archives:</b> archiving public data at risk of being lost.
