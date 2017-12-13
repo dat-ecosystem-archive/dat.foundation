@@ -3,19 +3,19 @@ const cta = require('./cta-btn')
 
 module.exports = function (state, emit) {
   return html`
-    <div class="mt7-ns mt5 mw8 center tl flex flex-row-ns flex-column w-100">
+    <div class="mt5-ns mt5 mw8 center tl flex flex-row-ns flex-column w-100">
       <div class="flex w-100 w-third-ns bg-white dat-shadow mv4-ns mv2 mh3-l mh1-ns pa3">
         <div class="flex-column flex">
           <div class="mt3 w3 h3 center">
             <svg><use xlink:href="#daticon-star-dat"/></svg>
           </div>
-          <h4 class="f4 mb0 tc">datBase</h4>
+          <h4 class="f4 mb0 tc">Dat Base</h4>
           <p class="tc mb0 f7 ttu dat-neutral-70">
-            Coming soon!
+            Dat for Researchers
           </p>
           <ul class="dat-list list p0 lh-copy">
             <li class="f5 mb2">
-              <b>Open Data:</b> future-friendly apps for your research data pipeline.
+              <b>Open Data:</b> archive, catalogue, and share data pipelines.
             </li>
             <li class="f5 mb2">
               <b>Public Archives:</b> archiving public data at risk of being lost.
@@ -25,7 +25,7 @@ module.exports = function (state, emit) {
             ${cta(state, emit, {
               href: 'https://datbase.org',
               klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
-              text: 'Learn More',
+              text: 'Share Data',
               id: 'datbase'
             })}
           </p>
