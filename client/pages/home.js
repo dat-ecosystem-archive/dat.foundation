@@ -90,12 +90,12 @@ module.exports = function (state, emit) {
         'title': 'Why use Dat Protocol?',
         'subtitle': `
           We set out to improve access to public data and created a new protocol along the way.
-          Learn more in the <a
+          Learn more at <a
             target="_blank"
             rel="noopener noreferrer"
             class="link"
-            href="/paper"
-            >Dat paper</a>.
+            href="https://www.datprotocol.com/"
+            >datprotocol.com</a>.
         `,
         'sections': [
           {
