@@ -8,8 +8,9 @@ module.exports = function () {
         <div class="fl w-third">
           <h4 class="f4 horizontal-rule-footer">Explore</h4>
           <ul class="dat-list p0 list lh-copy">
+            ${liLink('http://chat.datproject.org', 'Community')}
+            ${liLink('https://www.datprotocol.com/', 'Dat Protocol')}
             ${liLink('https://datbase.org', 'DatBase')}
-            ${liLink('https://dat.land', 'Community')}
           </ul>
         </div>
         <div class="fl w-third">
@@ -25,12 +26,11 @@ module.exports = function () {
           <ul class="dat-list list p0 lh-copy">
             ${liLink('https://twitter.com/dat_project', 'Twitter')}
             ${liLink('https://github.com/datproject', 'Github')}
-            ${liLink('https://www.stickermule.com/en/marketplace/9709-dat-data-v3', 'Get Stickers')}
           </ul>
         </div>
       </div>
       <p class="bt b--dat-neutral-80 color-neutral-50 tc f7 pv3">
-        <strong>Dat</strong> 2017 • Page source on <a class="color-neutral-50 hover-color-pink" href="https://github.com/datproject/datproject.org">github</a>
+        <strong>Dat</strong> 2018 • Page source on <a class="color-neutral-50 hover-color-pink" href="https://github.com/datproject/datproject.org">github</a>
       </p>
     </section>
   </footer>
