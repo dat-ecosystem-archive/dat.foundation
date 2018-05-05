@@ -48,7 +48,7 @@ module.exports = function (state, emit) {
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
             ${cta(state, emit, {
-              href: 'https://dat.land',
+              href: 'https://datprotocol.com',
               klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
               text: 'Build on Dat',
               id: 'dat-land'
