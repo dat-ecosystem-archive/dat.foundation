@@ -42,7 +42,7 @@ function wrap (view) {
     const page = views[view]
     return function (state, emit) {
       return html`
-        <body>
+        <body class="dat-neutral">
         ${page(state, emit)}
         </body>
       `

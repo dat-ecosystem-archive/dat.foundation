@@ -10,33 +10,34 @@
   "bugs": {
     "url": "https://github.com/datproject/datproject.org/issues"
   },
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "npm run fa-dev & ANALYTICS=http://localhost:3000 bankai client/ -c [ -u sheetify-nested ] -w --assets img",
-    "build": "bankai build client/ public/ -c [ -u sheetify-nested ]",
-    "start": "npm run build && node ./server.js",
-    "server": "node ./server.js",
+    "dev": "npm run fa-dev & ANALYTICS=http://localhost:3000 bankai start index.js",
+    "build": "bankai build index.js",
+    "start": "bankai start index.js",
     "fa-dev": "fair-analytics --memory",
-    "test": "standard && dependency-check ./package.json --entry client/"
+    "test": "standard && dependency-check ./package.json"
+  },
+  "sheetify": {
+    "transform": [
+      "sheetify-nested"
+    ]
   },
   "devDependencies": {
-    "bankai": "^8.1.1",
+    "bankai": "^9.14.0",
     "dependency-check": "^2.9.1",
     "fair-analytics": "^1.2.2",
-    "standard": "^7.1.2"
+    "standard": "^11.0.1"
   },
   "dependencies": {
     "choo": "^6.0.0",
-    "choo-log": "^7.2.1",
-    "compression": "^1.7.0",
-    "dat-colors": "^3.4.0",
+    "choo-log": "^8.0.0",
+    "dat-colors": "^3.5.1",
     "dat-icons": "^2.5.0",
-    "express": "^4.15.4",
-    "express-simple-redirect": "^1.0.1",
     "html-minifier": "^3.5.5",
     "microanalytics": "^1.0.1",
-    "sheetify": "^6.1.1",
+    "sheetify": "^7.3.2",
     "sheetify-nested": "^1.0.2",
-    "tachyons": "^4.8.1"
+    "tachyons": "^4.10.0"
   }
 }

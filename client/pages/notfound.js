@@ -16,7 +16,7 @@ module.exports = function (state, emit) {
       }
     }
   `
-  const backgroundImageUrl = '/img/bg-landing-page.svg'
+  const backgroundImageUrl = '/public/img/bg-landing-page.svg'
   return page(html`
     <div>
       <section class="${splash} bg-neutral pb4 white cover" style="background-image: url(${backgroundImageUrl})">

@@ -22,12 +22,12 @@ module.exports = function (state, emit) {
             </li>
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
-            ${cta(state, emit, {
-              href: 'https://datbase.org',
-              klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
-              text: 'Share Data',
-              id: 'datbase'
-            })}
+  ${cta(state, emit, {
+    href: 'https://datbase.org',
+    klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
+    text: 'Share Data',
+    id: 'datbase'
+  })}
           </p>
         </div>
       </div>
@@ -48,11 +48,11 @@ module.exports = function (state, emit) {
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
             ${cta(state, emit, {
-              href: 'https://datprotocol.com',
-              klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
-              text: 'Build on Dat',
-              id: 'dat-land'
-            })}
+    href: 'https://datprotocol.com',
+    klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
+    text: 'Build on Dat',
+    id: 'dat-land'
+  })}
           </p>
         </div>
       </div>
@@ -72,12 +72,13 @@ module.exports = function (state, emit) {
             </li>
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
-            ${cta(state, emit, {
-              href: 'https://beakerbrowser.com',
-              klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
-              text: 'Visit Beaker Browser',
-              id: 'beaker'
-            })}
+            ${cta(state, emit,
+    {
+      href: 'https://beakerbrowser.com',
+      klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
+      text: 'Visit Beaker Browser',
+      id: 'beaker'
+    })}
           </p>
         </div>
       </div>

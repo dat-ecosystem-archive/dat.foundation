@@ -29,8 +29,8 @@ module.exports = function () {
           </ul>
         </div>
       </div>
-      <p class="bt b--dat-neutral-80 color-neutral-50 tc f7 pv3">
-        <strong>Dat</strong> 2018 • Page source on <a class="color-neutral-50 hover-color-pink" href="https://github.com/datproject/datproject.org">github</a>
+      <p class="bt b--dat-neutral-80 color-neutral-50 tc f6 pv3">
+        <strong>Dat Project</strong> © 2018 • Source on <a class="color-neutral-50 hover-color-pink" href="https://github.com/datproject/datproject.org">github</a>
       </p>
     </section>
   </footer>
