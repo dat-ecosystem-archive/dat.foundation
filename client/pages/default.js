@@ -5,11 +5,11 @@ const footer = require('../elements/footer')
 
 module.exports = function (content) {
   return html`
-    <div>
+    <body>
       ${header()}
       ${content}
       ${footer()}
       ${datIcons()}
-    </div>
+    </body>
   `
 }

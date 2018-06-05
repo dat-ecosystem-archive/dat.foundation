@@ -15,37 +15,10 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(require('choo-log')())
 }
 
-const views = {
-  home: require('./pages/home'),
-  about: require('./pages/about'),
-  default: require('./pages/notfound')
-}
-
-// wrap views in body we can mount to view template
-app.route('/', wrap('home'))
-app.route('/about', wrap('about'))
-app.route('/about/team', wrap('about')) // for `/about#team` - seems weird, bug?
+app.route('/', require('./pages/home'))
+app.route('/about', require('./pages/about'))
 
 // error route
-app.route('*', wrap('default'))
+app.route('*', require('./pages/notfound'))
 
-if (module.parent) {
-  module.exports = app
-} else {
-  app.mount('body')
-}
-
-function wrap (view) {
-  if (module.parent) {
-    return require(path.join(__dirname, 'pages', view))
-  } else {
-    const page = views[view]
-    return function (state, emit) {
-      return html`
-        <body class="dat-neutral">
-        ${page(state, emit)}
-        </body>
-      `
-    }
-  }
-}
+module.exports = app.mount('body')
