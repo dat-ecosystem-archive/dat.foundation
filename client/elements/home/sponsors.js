@@ -1,14 +1,8 @@
 const html = require('choo/html')
-const css = require('sheetify')
 
 module.exports = function (props) {
-  const elCss = css`
-    :host {
-    }
-  `
-
   return html`
-    <section class="${props.klass} ${elCss}">
+    <section class="${props.klass}">
       <div class="pv2 ph3 pa4-m mw8-ns center-ns">
       <header>
         <h2 class="f2 mb0">Sponsors and Supporters</h2>

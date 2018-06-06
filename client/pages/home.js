@@ -8,32 +8,32 @@ const cta = require('../components/cta-btn')
 const header = require('../elements/header')
 const footer = require('../elements/footer')
 
+const splash = css`
+  :host {
+    background-repeat: no-repeat;
+    background-position: center 225px;
+    background-image: url("/public/img/bg-landing-page.svg");
+  }
+
+  :host > svg {
+    width: inherit;
+    height: inherit;
+  }
+
+  @media screen and (min-width: 30em) {
+    /* ns - not small breakpoint from tachyons */
+    background-position: center 175px;
+  }
+`
+
 module.exports = function (state, emit) {
   emit(state.events.DOMTITLECHANGE, 'Dat Project - Welcome!')
-
-  const splash = css`
-    :host {
-      svg {
-        width: inherit;
-        height: inherit;
-      }
-
-      background-repeat: no-repeat;
-      background-position: center 225px;
-
-      @media screen and (min-width: 30em) {
-        /* ns - not small breakpoint from tachyons */
-        background-position: center 175px;
-      }
-    }
-  `
-  const backgroundImageUrl = '/public/img/bg-landing-page.svg'
 
   return html`
     <body>
       ${header()}
     <div>
-      <div class="${splash} mh2 mh4-l center contain" style="background-image: url(${backgroundImageUrl})">
+      <div class="${splash} mh2 mh4-l center contain">
         <section class="tc pa3 pt5-ns">
           <h1 class="f2 f1-l mb0 lh-title">
             A distributed <span class="color-green">dat</span>a community

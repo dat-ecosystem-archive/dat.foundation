@@ -2,16 +2,12 @@ const html = require('choo/html')
 const css = require('sheetify')
 
 const logoCss = css`
-  :host {
-    img {
-      transition: transform .5s ease-in-out;
-      width: inherit;
-    }
-    &:hover, &:focus {
-      img {
-        transform: rotate(360deg);
-      }
-    }
+  :host > img {
+    transition: transform .5s ease-in-out;
+    width: inherit;
+  }
+  :host:hover > img, :host:focus > img{
+    transform: rotate(360deg);
   }
 `
 
