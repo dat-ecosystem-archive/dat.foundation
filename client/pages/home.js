@@ -1,10 +1,12 @@
 const html = require('choo/html')
 const css = require('sheetify')
-const page = require('./default')
+const datIcons = require('dat-icons')
 const homeSection = require('../components/home-section')
 const sponsors = require('../elements/home/sponsors')
 const callout = require('../components/callout')
 const cta = require('../components/cta-btn')
+const header = require('../elements/header')
+const footer = require('../elements/footer')
 
 module.exports = function (state, emit) {
   emit(state.events.DOMTITLECHANGE, 'Dat Project - Welcome!')
@@ -27,7 +29,9 @@ module.exports = function (state, emit) {
   `
   const backgroundImageUrl = '/public/img/bg-landing-page.svg'
 
-  return page(html`
+  return html`
+    <body>
+      ${header()}
     <div>
       <div class="${splash} mh2 mh4-l center contain" style="background-image: url(${backgroundImageUrl})">
         <section class="tc pa3 pt5-ns">
@@ -131,5 +135,8 @@ module.exports = function (state, emit) {
     })
   })}
     </div>
-  `)
+      ${footer()}
+      ${datIcons()}
+    </body>
+  `
 }

@@ -34,7 +34,6 @@
     "choo-log": "^8.0.0",
     "dat-colors": "^3.5.1",
     "dat-icons": "^2.5.0",
-    "html-minifier": "^3.5.5",
     "microanalytics": "^1.0.1",
     "sheetify": "^7.3.2",
     "sheetify-nested": "^1.0.2",

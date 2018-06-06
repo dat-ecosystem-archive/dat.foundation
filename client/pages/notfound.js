@@ -1,6 +1,8 @@
 const html = require('choo/html')
 const css = require('sheetify')
-const page = require('./default')
+const datIcons = require('dat-icons')
+const header = require('../elements/header')
+const footer = require('../elements/footer')
 
 module.exports = function (state, emit) {
   emit(state.events.DOMTITLECHANGE, '404 - Dat Not Found')
@@ -17,7 +19,9 @@ module.exports = function (state, emit) {
     }
   `
   const backgroundImageUrl = '/public/img/bg-landing-page.svg'
-  return page(html`
+  return html`
+    <body>
+      ${header()}
     <div>
       <section class="${splash} bg-neutral pb4 white cover" style="background-image: url(${backgroundImageUrl})">
         <header class="tc ph5 lh-copy">
@@ -37,5 +41,8 @@ module.exports = function (state, emit) {
          </ul>
       </section>
     </div>
-  `)
+      ${footer()}
+      ${datIcons()}
+    </body>
+  `
 }

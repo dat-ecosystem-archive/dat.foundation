@@ -1,6 +1,8 @@
 const html = require('choo/html')
-const page = require('./default')
+const datIcons = require('dat-icons')
 const team = require('../elements/team')
+const header = require('../elements/header')
+const footer = require('../elements/footer')
 
 module.exports = function (state, emit) {
   const wrapper = 'mw8-ns center-ns pv4 ph3 ph0-l'
@@ -8,7 +10,9 @@ module.exports = function (state, emit) {
   const headClass = 'f3 measure-narrow'
   emit(state.events.DOMTITLECHANGE, 'About Dat Project')
 
-  return page(html`
+  return html`
+    <body>
+      ${header()}
     <div>
       <section class="${wrapper}">
         <header class="pt4">
@@ -44,5 +48,8 @@ module.exports = function (state, emit) {
         </div>
       </section>
     </div>
-  `)
+      ${footer()}
+      ${datIcons()}
+    </body>
+  `
 }
