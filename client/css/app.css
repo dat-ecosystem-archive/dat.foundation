@@ -102,13 +102,12 @@ a {
   width: .5rem;
   height: .5rem;
   margin-right: .75rem;
-  background-image: url(/img/dat-hexagon.svg);
+  background-image: url(/public/img/dat-hexagon.svg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-.horizontal-rule {
-  &:after {
+.horizontal-rule:after {
     content: '';
     display: block;
     width: 4rem;
@@ -116,11 +115,9 @@ a {
     margin-top: 1.25rem;
     margin-bottom: 1rem;
     background-color: var(--pink);
-  }
 }
 
-.horizontal-rule-footer {
-  &:after {
+.horizontal-rule-footer:after {
     content: '';
     display: block;
     width: 2rem;
@@ -128,7 +125,6 @@ a {
     background-color: var(--neutral-70);
     margin-top: .75rem;
     margin-bottom: 1.5rem;
-  }
 }
 
 svg {

@@ -1,0 +1,8 @@
+/paper                          /paper.pdf  200
+/install                        https://docs.datproject.org/install  301
+/explore                        https://datbase.org  301
+/blog                           https://blog.datproject.org/  301
+/blog/:year-:month-:date-:slug  https://blog.datproject.org/:year/:month/:date/:slug  301
+/api/*                          https://datbase.org/api/:splat  301
+/dat:/*                         https://datbase.org/dat:/:splat  301
+/*                              /index.html  200

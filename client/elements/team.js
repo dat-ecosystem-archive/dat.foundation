@@ -9,21 +9,21 @@ module.exports = function () {
       <h2 class="horizontal-rule">Team</h2>
       <div class="${flexClass} w-100">
         ${teamInfo.current.map((person) => {
-          return personBox(person)
-        })}
+    return personBox(person)
+  })}
       </div>
       <h2 class="horizontal-rule">Advisors</h2>
       <div class="${flexClass} w-100">
         ${teamInfo.advisors.map((person) => {
-          return personBox(person)
-        })}
+    return personBox(person)
+  })}
       </div>
       <h2 class="horizontal-rule">Alumni</h2>
       <div class="${flexClass} w-100">
         ${teamInfo.alumni.map((person) => {
-          person.description = null
-          return personBox(person)
-        })}
+    person.description = null
+    return personBox(person)
+  })}
       </div>
     </div>
   `

@@ -2,16 +2,12 @@ const html = require('choo/html')
 const css = require('sheetify')
 
 const logoCss = css`
-  :host {
-    img {
-      transition: transform .5s ease-in-out;
-      width: inherit;
-    }
-    &:hover, &:focus {
-      img {
-        transform: rotate(360deg);
-      }
-    }
+  :host > img {
+    transition: transform .5s ease-in-out;
+    width: inherit;
+  }
+  :host:hover > img, :host:focus > img{
+    transform: rotate(360deg);
   }
 `
 
@@ -20,7 +16,7 @@ module.exports = function () {
     <nav class="bb b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
       <div class="dtc v-mid w-25">
         <a class="${logoCss} v-mid dib link dim mr2 w2 h2" href="/" title="Dat Project">
-          <img src="/img/dat-hexagon.svg" alt="Dat Project Logo">
+          <img src="/public/img/dat-hexagon.svg" alt="Dat Project Logo">
         </a>
         <a class="v-mid link dim color-neutral b f5 f3-ns dib-l dn" href="/" title="Dat Project">Dat<span class="ml1 color-neutral-60">Project</span></a>
       </div>
