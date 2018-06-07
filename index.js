@@ -4,7 +4,7 @@ const css = require('sheetify')
 css('tachyons')
 css('dat-colors')
 css('./client/css/app.css')
-css('./client/css/fonts.css')
+css('./client/css/fonts.css') // can't delete without getting bankai error?
 
 const app = choo()
 app.use(require('./client/plugins/scroll-top'))

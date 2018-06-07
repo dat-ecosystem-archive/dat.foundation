@@ -16,7 +16,7 @@ module.exports = function () {
     <nav class="bb b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
       <div class="dtc v-mid w-25">
         <a class="${logoCss} v-mid dib link dim mr2 w2 h2" href="/" title="Dat Project">
-          <img src="/public/img/dat-hexagon.svg" alt="Dat Project Logo">
+          <img src="/public/img/dat-hexagon.svg">
         </a>
         <a class="v-mid link dim color-neutral b f5 f3-ns dib-l dn" href="/" title="Dat Project">Dat<span class="ml1 color-neutral-60">Project</span></a>
       </div>
