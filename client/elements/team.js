@@ -6,15 +6,25 @@ module.exports = function () {
 
   return html`
     <div>
-      <h2 class="horizontal-rule">Team</h2>
+      <h2 class="horizontal-rule">Dat Project Governance Team</h2>
+      <p>asdfasdf</p>
       <div class="${flexClass} w-100">
-        ${teamInfo.current.map((person) => {
+        ${teamInfo.governance.map((person) => {
     return personBox(person)
   })}
       </div>
-      <h2 class="horizontal-rule">Advisors</h2>
+      <h2 class="horizontal-rule">Dat Protocol Working Group</h2>
+      <p>Description</p>
       <div class="${flexClass} w-100">
-        ${teamInfo.advisors.map((person) => {
+        ${teamInfo.dpwg.map((person) => {
+          person.description = null
+    return personBox(person)
+  })}
+      </div>
+      <h2 class="horizontal-rule">Community Collaborators</h2>
+      <p>Folks working on Dat projects</p>
+      <div class="${flexClass} w-100">
+        ${teamInfo.other.map((person) => {
     return personBox(person)
   })}
       </div>
@@ -29,7 +39,7 @@ module.exports = function () {
   `
 
   function personBox (info) {
-    const description = html`<p class="lh-copy measure center f6 black-70"><div class="gallery-item-subtitle"></div></p>`
+    const description = html`<p class="lh-copy measure center f5 fw4 black-70"></p>`
     description.innerHTML = info.description
     return html`
       <div class="inline-flex w-100 w-third-l w-50-m pa3">
