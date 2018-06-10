@@ -10,9 +10,9 @@ const app = choo()
 app.use(require('./client/plugins/scroll-top'))
 if (process.env.ANALYTICS) app.use(require('./client/plugins/analytics'))
 
-if (process.env.NODE_ENV !== 'production') {
-  app.use(require('choo-devtools')())
-}
+// if (process.env.NODE_ENV !== 'production') {
+app.use(require('choo-devtools')())
+// }
 
 app.route('/', require('./client/pages/home'))
 app.route('/about', require('./client/pages/about'))
