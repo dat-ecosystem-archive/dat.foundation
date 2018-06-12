@@ -1,23 +1,23 @@
 module.exports = {
   'governance': [
-    {name: 'Mathias Buus', github: 'mafintosh', description: 'Lead developer on the Dat protocol and underlying technology. Programmer based in Copenhagen, Denmark. Co-creator of <a href="http://node-modules.com">node-modules.com</a> and co-founder of <a href="http://ge.tt/">ge.tt</a>.'},
-    {name: 'Danielle Robinson, PhD', github: 'daniellecrobinson', description: 'Co-Executive Director at Code for Science & Society, based in Portland, OR. Open science advocate and data enthusiast who believes in the power of open communities, former neuroscience researcher.'},
-    {name: 'Joe Hand', github: 'joehand', description: 'Co-Executive Director at Code for Science & Society, based in Portland, OR. Joe previously managed <a href="https://santafe.edu/research/projects/neighborhoods-slums-human-development">a project</a> at the Santa Fe Institute to transform data collection practices in slums & informal settlements worldwide.'},
-    {name: 'Karissa McKelvey', github: 'karissa', description: 'Board member at Code for Science & Society. Former <a href="http://scholar.google.com/citations?user=RM2tB8EAAAAJ&hl=en">academic</a> experienced in building interactive data visualization and collaboration tools.'},
+    {name: 'Mathias Buus', github: 'mafintosh', description: 'TODO: update'},,
+    {name: 'Karissa McKelvey', github: 'karissa', description: 'Board member at Code for Science & Society and developer on Dat Project. Former <a href="http://scholar.google.com/citations?user=RM2tB8EAAAAJ&hl=en">academic</a> experienced in building interactive data visualization and collaboration tools.'},
+    {name: 'Danielle Robinson, PhD', github: 'daniellecrobinson', description: 'TODO: update'},
+    {name: 'Joe Hand', github: 'joehand', description: 'TODO: update'}
   ],
-  'dpwg': [
+  'wg': [
     {name: 'Mathias Buus', github: 'mafintosh', description: 'Beaker Browser'},
     {name: 'Tara Vancil', github: 'taravancil', description: 'Beaker Browser'},
     {name: 'Paul Frazee', github: 'pfrazee', description: 'Beaker Browser'},
-    {name: 'Brian Newbold', github: 'bnewbold', description: 'Internet Archive'},
+    {name: 'Karissa McKelvey', github: 'karissa', description: 'Code for Science & Society, Digital Democracy'},
     {name: 'Danielle Robinson, PhD', github: 'daniellecrobinson', description: 'Code for Science & Society'},
     {name: 'Joe Hand', github: 'joehand', description: 'Code for Science & Society'},
-    {name: 'Karissa McKelvey', github: 'karissa', description: 'Code for Science & Society, Digital Democracy'}
+    {name: 'Brian Newbold', github: 'bnewbold', description: 'Internet Archive'}
   ],
   'other': [
-    {name: 'Max Ogden', github: 'maxogden', description: 'Founder of Dat'},
-    {name: 'Yoshua Wuyts', github: 'yoshuawuyts', description: '✨ 🚂 ✌️ - working on datrs'},
-    {name: 'Jim Pick', github: 'jimpick', description: 'Dat developer'}
+    {name: 'Max Ogden', github: 'maxogden', description: 'Developer with Code for Science & Society working on Dat in the Lab project. Started the Dat Project in 2014.'},
+    {name: 'Yoshua Wuyts', github: 'yoshuawuyts', description: 'Building <a href="https://datrs.yoshuawuyts.com">datrs</a>, a Rust implementation of Dat. Funded by the Prototype Fund (TODO: link). ✨ 🚂 ✌'},
+    {name: 'Jim Pick', github: 'jimpick', description: 'TODO'}
   ],
   'alumni': [
     {name: 'Kristina Schneider', github: 'kriesse', description: 'Designer based in Berlin, Germany. Kriesse organizes community events like <a href="http://www.cssconf.eu/">CSSconf EU</a>, <a href="http://cssclass.es">CSSclasses</a> and <a href="http://up.front.ug/">upfront.ug</a>.'},

@@ -7,7 +7,7 @@ const footer = require('../elements/footer')
 module.exports = function (state, emit) {
   const wrapper = 'mw8-ns center-ns pv4 ph3 ph0-l'
   const copyClass = 'f4 lh-copy measure'
-  const headClass = 'f3 measure-narrow'
+  const headClass = 'f4 measure-narrow'
   emit(state.events.DOMTITLECHANGE, 'About Dat Project')
 
   return html`
@@ -15,10 +15,10 @@ module.exports = function (state, emit) {
       ${header()}
     <div>
       <section class="${wrapper}">
-        <header class="pt4">
-          <h1 class="horizontal-rule">About Dat</h1>
+        <header class="">
+          <h1 class="f2 horizontal-rule">About Dat</h1>
         </header>
-        <article class="pl3">
+        <article class="">
           <p class="${copyClass}">
             Dat is a nonprofit-backed community & open protocol for building apps of the future. The Dat Project imagines a web of commons created by global communities on open and secure protocols.
           </p>

@@ -3,32 +3,33 @@ const teamInfo = require('../team-info')
 
 module.exports = function () {
   const flexClass = 'flex flex-wrap flex-row justify-between items-stretch'
+  const copyClass = 'f4 lh-copy'
 
   return html`
     <div>
-      <h2 class="horizontal-rule">Dat Project Governance Team</h2>
-      <p>asdfasdf</p>
+      <h2 class="f2 horizontal-rule">Dat Project Governance Team</h2>
+      <p class="${copyClass}">The Dat Project Governance Team supports the strategy and vision for Dat Project, led by core Dat Project members and long-time outside contributors. This group is also involved in financial and legal decisions regarding the Dat Project in collaboration with Code for Science and Society. Learn more about <a href="https://github.com/datproject/governance">Dat Project governance</a>.</p>
       <div class="${flexClass} w-100">
         ${teamInfo.governance.map((person) => {
     return personBox(person)
   })}
       </div>
-      <h2 class="horizontal-rule">Dat Protocol Working Group</h2>
-      <p>Description</p>
+      <h2 class="f2 horizontal-rule">Dat Protocol Working Group</h2>
+      <p class="${copyClass}">The Dat Protocol Working Group advances the protocol development and third-party implementations. This group documents all aspects of the Dat Protocol specification and makes decisions regarding protocol changes. Learn more about the <a href="https://github.com/datprotocol/working-group">Dat Protocol working group</a>.</p>
       <div class="${flexClass} w-100">
-        ${teamInfo.dpwg.map((person) => {
+        ${teamInfo.wg.map((person) => {
           person.description = null
     return personBox(person)
   })}
       </div>
-      <h2 class="horizontal-rule">Community Collaborators</h2>
-      <p>Folks working on Dat projects</p>
+      <h2 class="f2 horizontal-rule">Key Community Collaborators</h2>
+      <p class="${copyClass}">Dat Project is driven forward by many community members, most contributing as volunteers. These key collaborators contribute maintainance and development to core pieces of the Dat ecosystem.</p>
       <div class="${flexClass} w-100">
         ${teamInfo.other.map((person) => {
     return personBox(person)
   })}
       </div>
-      <h2 class="horizontal-rule">Alumni</h2>
+      <h2 class="f2 horizontal-rule">Alumni</h2>
       <div class="${flexClass} w-100">
         ${teamInfo.alumni.map((person) => {
     person.description = null
@@ -39,10 +40,10 @@ module.exports = function () {
   `
 
   function personBox (info) {
-    const description = html`<p class="lh-copy measure center f5 fw4 black-70"></p>`
+    const description = html`<p class="${copyClass}"></p>`
     description.innerHTML = info.description
     return html`
-      <div class="inline-flex w-100 w-third-l w-50-m pa3">
+      <div class="inline-flex w-100 w-50-ns mw6 pa3">
         <div class="bg-white w-100 pa3 pa4-ns b--dat-blue ba bw2">
           <div class="tc">
             <a href="http://github.com/${info.github}"><img src="${avatar(info.github)}" class="br-100 h3 w3 dib" title="${info.name}" alt="${info.name}"></a>
