@@ -1,19 +1,25 @@
 module.exports = {
-  'current': [
-    {name: 'Danielle Robinson, PhD', github: 'daniellecrobinson', description: 'co-Executive Director & Director of Partnerships at Code for Science & Society, based in Portland, OR. Open science advocate and data enthusiast who believes in the power of open communities, former neuroscience researcher.'},
-    {name: 'Joe Hand', github: 'joehand', description: 'co-Executive Director & Director of Operations at Code for Science & Society, based in Portland, OR. Joe previously managed <a href="https://santafe.edu/research/projects/neighborhoods-slums-human-development">a project</a> at the Santa Fe Institute to transform data collection practices in slums & informal settlements worldwide.'},
-    {name: 'Karissa McKelvey', github: 'karissa', description: 'Director of Engineering at Code for Science & Society. Programmer and data scientist based in Oakland, CA. Former <a href="http://scholar.google.com/citations?user=RM2tB8EAAAAJ&hl=en">academic</a> experienced in building interactive data visualization and collaboration tools.'},
-    {name: 'Mathias Buus', github: 'mafintosh', description: 'Lead developer on the Dat protocol and underlying technology. Programmer based in Copenhagen, Denmark. Co-creator of <a href="http://node-modules.com">node-modules.com</a> and co-founder of <a href="http://ge.tt/">ge.tt</a>.'},
-    {name: 'Max Ogden', github: 'maxogden', description: 'Programmer based in Portland, OR. Max works on or has worked on things like <a href="http://csvconf.com/">CSVConf</a>, <a href="http://codeforamerica.org/">Code for America</a>, <a href="http://jsforcats.com/">JavaScript for Cats</a>, and <a href="http://voxeljs.com/">Voxel.js</a>.'}
+  'governance': [
+    {name: 'Mathias Buus', github: 'mafintosh', description: 'Mathias is a self taught JavaScript hacker from Copenhagen that has been working with Node.js since the 0.2 days. Mathias likes to work with P2P and distributed systems and is the author of more than 650 modules on npm. He is also the Chief of Research on the Beaker Browser, leading the technical work on the Dat Protocol.'},
+    {name: 'Karissa McKelvey', github: 'karissa', description: 'Karissa is a board member at Code for Science & Society and worked on the Dat Project since 2014. She is currently an open source developer at Digital Democracy. Former <a href="http://scholar.google.com/citations?user=RM2tB8EAAAAJ&hl=en">academic</a> experienced in building interactive data visualization and collaboration tools.'},
+    {name: 'Danielle Robinson, PhD', github: 'daniellecrobinson', description: 'Danielle Robinson is Co-Executive Director of Code for Science & Society where she works support and advise people who create open source technology in the public interest. In 2016, she completed a PhD in neuroscience at Oregon Health & Science University. Then as a Mozilla Fellow for Science she ran Working Open Workshops, explored decentralized approaches to data preservation, and advocated for open access to research.'},
+    {name: 'Joe Hand', github: 'joehand', description: 'Joe Hand is Co-Executive Director at Code for Science & Society and a core developer on Dat Project with a focus on developing and managing data-focused programs for researchers and community-driven organizations. Previously, Joe managed a global project at the Santa Fe Institute to transform data collection practices of an international NGO, operating in slums across 30 countries in the Global South'}
   ],
-  'advisors': [
-    {name: 'Kristen Ratan', github: 'kristenratan', description: 'Code for Science & Society board member. Co-Founder of the Collaborative Knowledge Foundation, a nonprofit with a mission to evolve how knowledge is created, produced, and shared.'},
-    {name: 'Waldo Jaquith', github: 'waldoj', description: 'Code for Science & Society board member. Employee at 18F. Previously, Director of U.S. Open Data and a Shuttleworth Foundation Fellow.'},
-    {name: 'Richard Smith-Unna', github: 'blahah', description: 'Lead developer on ScienceFair. A biologist, hacker, and PhD student in Plant Sciences in the Hibberd Lab at the University of Cambridge. A <a href="http://rik.smith-unna.com/2015/10/07/i-am-now-a-mozilla-science-fellow/">Mozilla Fellow for Science</a> for 2015-16.'},
-    {name: 'Kaitlin Thaney', github: 'kaythaney', description: 'Endowment director, at Wikimedia Foundation. Previously, director, Mozilla Science Lab (<a href="http://twitter.com/mozillascience">@MozillaScience</a>). Using data for good at <a href="http://twitter.com/datakindUK">@datakindUK</a>, frequent flyer, and other general geekery.'}
+  'wg': [
+    {name: 'Mathias Buus', github: 'mafintosh', description: 'Beaker Browser'},
+    {name: 'Tara Vancil', github: 'taravancil', description: 'Beaker Browser'},
+    {name: 'Paul Frazee', github: 'pfrazee', description: 'Beaker Browser'},
+    {name: 'Karissa McKelvey', github: 'karissa', description: 'Code for Science & Society, Digital Democracy'},
+    {name: 'Danielle Robinson, PhD', github: 'daniellecrobinson', description: 'Code for Science & Society'},
+    {name: 'Joe Hand', github: 'joehand', description: 'Code for Science & Society'},
+    {name: 'Brian Newbold', github: 'bnewbold', description: 'Internet Archive'}
+  ],
+  'other': [
+    {name: 'Max Ogden', github: 'maxogden', description: 'Developer with Code for Science & Society working on Dat in the Lab project. Started the Dat Project in 2013.'},
+    {name: 'Yoshua Wuyts', github: 'yoshuawuyts', description: 'Building <a href="https://datrs.yoshuawuyts.com">datrs</a>, a Rust implementation of Dat. Funded by the <a href="https://prototypefund.de/en/">Prototype Fund</a>. ✨ 🚂 ✌'},
+    {name: 'Jim Pick', github: 'jimpick', description: 'Consultant for Dat Project software and builder of cool Dat demos. Co-host of <a href="https://twitter.com/dat_cast">@dat_cast</a> podcast.'}
   ],
   'alumni': [
-    {name: 'Yoshua Wuyts', github: 'yoshuawuyts', description: '✨ 🚂 ✌️'},
     {name: 'Kristina Schneider', github: 'kriesse', description: 'Designer based in Berlin, Germany. Kriesse organizes community events like <a href="http://www.cssconf.eu/">CSSconf EU</a>, <a href="http://cssclass.es">CSSclasses</a> and <a href="http://up.front.ug/">upfront.ug</a>.'},
     {name: 'Julian Gruber', github: 'juliangruber', description: 'Programmer traveling the world. Contributor to projects like <a href="https://nodejs.org">Node.js</a> and <a href="https://leveldb.org/">LevelDB</a>. Has a strong drive to rid humanity of redundant work and empower everyone to think big.'},
     {name: 'Chia-liang Kao', github: 'clkao', description: 'Developer and civic hacker based in Taipei, Taiwan. Co-founder of <a href="http://g0v.asia/tw/">g0v.tw</a>.'},
