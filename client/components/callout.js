@@ -43,7 +43,7 @@ module.exports = function (state, emit) {
               <b>Live Syncing:</b> easy file transfers, distributed databases, p2p streams.
             </li>
             <li class="f5 mb2">
-              <b>Futuristic:</b> private, encrypted, and peer-to-peer by default.
+              <b>Futuristic:</b> interoperable and peer-to-peer by default.
             </li>
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
@@ -68,7 +68,7 @@ module.exports = function (state, emit) {
               <b>Beaker Browser:</b> browse, create, and host websites over Dat.
             </li>
             <li class="f5 mb2">
-              <b>Private Sharing:</b> share files privately, encrypted with the secret URL.
+              <b>Direct Sharing:</b> share files a unique URL.
             </li>
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
