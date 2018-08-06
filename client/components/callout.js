@@ -68,7 +68,7 @@ module.exports = function (state, emit) {
               <b>Beaker Browser:</b> browse, create, and host websites over Dat.
             </li>
             <li class="f5 mb2">
-              <b>Direct Sharing:</b> share files a unique URL.
+              <b>Direct Sharing:</b> share files with a unique URL.
             </li>
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
