@@ -12,6 +12,9 @@ module.exports = function (props) {
         <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://codeforscience.org/" title="Code for Science and Society">
           <img class="h-auto w5" src="/public/img/codeforscience.png" alt="Code for Science and Society">
         </a>
+ <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://mozilla.org/" title="Mozilla">
+          <img class="h3 w-auto" src="/public/img/Mozilla_Logo.png" alt="Mozilla">
+        </a>
         <a class="inline-flex items-center mv2 mh3" href="https://sloan.org/programs/digital-technology/data-and-computational-research" title="Dat Project Grant - Alfred P. Sloan Foundation">
           <img class="h3 w-auto" src="/public/img/sloan.png" alt="Alfred P. Sloan Foundation">
         </a>
