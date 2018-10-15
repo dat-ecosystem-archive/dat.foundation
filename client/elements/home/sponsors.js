@@ -6,7 +6,11 @@ module.exports = function (props) {
       <div class="pv2 ph3 pa4-m mw8-ns center-ns">
       <header>
         <h2 class="f2 mb0">Sponsors and Supporters</h2>
-        <p class="f4 mt1 color-neutral-70 horizontal-rule">Dat is developed by the non-profit group Code for Science & Society and supported by generous sponsors.</p>
+        <p class="f4 mt1 color-neutral-70 horizontal-rule">Dat is supported by donations and grants. Want to learn more? Check our <a
+            target="_blank"
+            class="link"
+            href="https://github.com/datproject/organization"
+            >financial information</a>.</p>
       </header>
       <div class="pt3 flex flex-wrap w-100">
         <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://codeforscience.org/" title="Code for Science and Society">

@@ -15,7 +15,7 @@ module.exports = {
     {name: 'Brian Newbold', github: 'bnewbold', description: 'Internet Archive'}
   ],
   'other': [
-    {name: 'Max Ogden', github: 'maxogden', description: 'Developer with Code for Science & Society working on Dat in the Lab project. Started the Dat Project in 2013.'},
+    {name: 'Max Ogden', github: 'maxogden', description: 'Started the Dat Project in 2013.'},
     {name: 'Yoshua Wuyts', github: 'yoshuawuyts', description: 'Building <a href="https://datrs.yoshuawuyts.com">datrs</a>, a Rust implementation of Dat. Funded by the <a href="https://prototypefund.de/en/">Prototype Fund</a>. ✨ 🚂 ✌'},
     {name: 'Jim Pick', github: 'jimpick', description: 'Consultant for Dat Project software and builder of cool Dat demos. Co-host of <a href="https://twitter.com/dat_cast">@dat_cast</a> podcast.'}
   ],
