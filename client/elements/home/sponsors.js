@@ -36,8 +36,8 @@ module.exports = function (props) {
               <div>
                 <h2 class="fw4 f3 mt0 mb3">We need your support!</h2>
                 <p class="black-70 measure lh-copy mv0">
-                  You help make Dat Project a success.
-                  Donations help sustain Dat Project & allow us to spend more time with our community.
+                  You help make Dat Project a success!
+                  Donations sustain Dat, allowing us to improve core support and feature development.
                 </p>
               </div>
             </div>

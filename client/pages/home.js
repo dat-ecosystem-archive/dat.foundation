@@ -27,7 +27,7 @@ const splash = css`
 `
 
 module.exports = function (state, emit) {
-  emit(state.events.DOMTITLECHANGE, 'dat://')
+  emit(state.events.DOMTITLECHANGE, 'dat:// — a peer-to-peer protocol')
 
   return html`
     <body>
@@ -51,7 +51,7 @@ module.exports = function (state, emit) {
     'bgColor': 'bg-neutral',
     'title': 'A bit more about Dat...',
     'subtitle': `
-       Communities are increasingly dependent on digital tools. Dat Protocol is a small but crucial link in connecting people. Using tools built on Dat, people can collaborate more effectively without reliance on profit-driven services.
+       Core pieces of the web shape how we communicate and organize. However, these pieces are increasingly controlled by large monopolies. In building Dat, we envision a future of community-driven tools backed by nonprofit organizations.
         `,
     'sections': [
       {
@@ -66,13 +66,13 @@ module.exports = function (state, emit) {
       },
       {
         'title': 'Why create a new protocol?',
-        'text': 'Designed initially for research data, Dat builds on the existing web while allowing users to directly publish to other users, view a transparent history of changes, and establish new models for digital collaboration. (TODO: 1 sentence vision of next-generation web)'
+        'text': 'The next-generation web includes public & private places for communities, without selling data to advertisers. Designed initially for research data, Dat builds on the existing web while providing more user control. Dat allows users to share directly and establish new models for digital collaboration.'
       }
     ],
     cta: cta(state, emit, {
       id: 'docs-cta',
       href: '/about',
-      text: 'Read the documentation',
+      text: 'Read More About Dat',
       klass: 'f5 white bg-animate bg-green hover-bg-dark-green pa3 link'
     })
   })}
@@ -117,31 +117,31 @@ module.exports = function (state, emit) {
       ${homeSection({
     'title': 'Striving for Value-Driven Technology',
     'subtitle': `
-          Along the way of building the future we got lost.
-          We need public technology driven by communities and humans.
+          Along the way of building the web we got lost.
+          We need technology driven by communities & built for public well-being.
         `,
     'sections': [
       {
         'title': 'Community First',
         'text': `
-              We believe that not-for-profit and human-driven technology will be the future of the open web.
-              We must also nurture an inclusive community creating fair technology.
+              We believe not-for-profit and community-driven technology will make the future of the web more inclusive.
+              To build that future, we must develop with communities not served by the current monopoly-driven system.
             `
       },
       {
         'title': 'Transparent Funding',
         'text': `
-              (Link to funding repo and posts)
+              We believe digital tools we rely on for community organization &  communication should be transparently funded and operated. Dat Project aims to be <a href="https://github.com/datproject/organization" target="_blank" class="link">transparent</a> about funding and the process of fundraising.
             `
       },
       {
         'title': 'Open Governance',
         'text': `
-              Say something about governance... <a
+            At the scale of the web, every decision can have a massive impact on our political systems, social well-being, and the future of humanity. We believe these decisions should not be made by private groups aiming to increase profits. Dat Project runs openly through a series of <a
             target="_blank"
             class="link"
             href="/about#team"
-            >working groups</a>
+            >working groups</a>.
             `
       }
     ],

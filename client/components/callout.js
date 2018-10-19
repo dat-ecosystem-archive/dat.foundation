@@ -11,7 +11,7 @@ module.exports = function (state, emit) {
           </div>
           <h4 class="f4 mb0 tc">Documentation</h4>
           <p class="tc mb0 f7 ttu dat-neutral-70">
-            Dat User Docs
+            Learn About Dat
           </p>
           <ul class="dat-list list p0 lh-copy">
             <li class="f5 mb2">
@@ -34,9 +34,9 @@ module.exports = function (state, emit) {
       <div class="flex w-100 w-third-ns bg-white dat-shadow mv4-ns mv2 mh3-l mh1-ns pa3">
         <div class="flex-column flex">
           <div class="mt3 w3 h3 center"><svg><use xlink:href="#daticon-network"/></svg></div>
-          <h4 class="f4 mb0 tc">Community Applications</h4>
+          <h4 class="f4 mb0 tc">Dat Ecosystem</h4>
           <p class="tc mb0 f7 ttu dat-neutral-70">
-            Explore the Dat Ecosystem
+            Community Applications & Tools
           </p>
           <ul class="dat-list list p0 lh-copy">
             <li class="f5 mb2">
