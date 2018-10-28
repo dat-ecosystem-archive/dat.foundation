@@ -71,7 +71,7 @@ module.exports = function (state, emit) {
     ],
     cta: cta(state, emit, {
       id: 'docs-cta',
-      href: '/about',
+      href: 'https://docs.datproject.org',
       text: 'Read More About Dat',
       klass: 'f5 white bg-animate bg-green hover-bg-dark-green pa3 link'
     })
@@ -99,7 +99,7 @@ module.exports = function (state, emit) {
       {
         'title': 'Creators',
         'text': `
-              (Why do "creators" use Dat? easy publishing, customizability)
+              Applications, such as the <a href="https://dat.land">Beaker Browser & other tools</a>, make publishing as simple as creating a website and sharing a Dat link.
             `
       },
       {
@@ -109,8 +109,8 @@ module.exports = function (state, emit) {
     ],
     cta: cta(state, emit, {
       id: 'docs-cta',
-      href: 'https://docs.datproject.org',
-      text: 'Read the documentation',
+      href: 'https://dat.land',
+      text: 'Explore More on Dat.Land',
       klass: 'f5 white bg-animate bg-green hover-bg-dark-green pa3 link'
     })
   })}

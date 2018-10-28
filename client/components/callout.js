@@ -40,10 +40,10 @@ module.exports = function (state, emit) {
           </p>
           <ul class="dat-list list p0 lh-copy">
             <li class="f5 mb2">
-              <b>Community-Driven:</b> learn more about applications built on Dat.
+              <b>Community-Driven:</b> learn more about how people use Dat.
             </li>
             <li class="f5 mb2">
-              <b>Open Source:</b> discover open source Dat modules and more.
+              <b>User Applications:</b> discover Beaker Browser, Dat Desktop, and more.
             </li>
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
@@ -76,7 +76,7 @@ module.exports = function (state, emit) {
             ${cta(state, emit, {
     href: 'https://datprotocol.com',
     klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
-    text: 'Dat Internals',
+    text: 'View the Specs',
     id: 'dat-protocol'
   })}
           </p>
