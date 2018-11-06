@@ -61,7 +61,7 @@ module.exports = function (state, emit) {
       {
         'title': 'Who runs the Dat Project?',
         'text': `
-            Dat is an open source project with community governance through a set of working groups. Dat is funded by donations and grants, with sponsorship by Code for Science & Society, a US nonprofit. Dat aims to support maintainance and core feature development through public funding.
+            Dat is an open source project with community governance through a set of working groups. Dat is funded by donations and grants, with sponsorship by Code for Science & Society, a US nonprofit. Dat aims to support maintenance and core feature development through public funding.
             `
       },
       {
@@ -94,17 +94,17 @@ module.exports = function (state, emit) {
     'sections': [
       {
         'title': 'Researchers',
-        'text': '(Why do researchers use Dat? transparency, archivability, data duplication)'
+        'text': 'With the <a href="https://blog.datproject.org/tag/science/">Dat in the Lab</a> project, we found places for Dat in existing researcher workflows, from basic data sharing to reproducible containers. We continue to work with researchers and libraries to identify high-impact uses of Dat in research.'
       },
       {
         'title': 'Creators',
         'text': `
-              Applications, such as the <a href="https://dat.land">Beaker Browser & other tools</a>, make publishing as simple as creating a website and sharing a Dat link.
+              Applications, such as the <a href="https://dat.land">Beaker Browser</a>, make publishing as simple as creating a website & sharing a Dat link. Providing true one-click publishing without selling data, creators can be empowered to share with their communities. We envision a future ecosystem developed around user-centered publishing.
             `
       },
       {
         'title': 'Activists',
-        'text': '(Why do activists use Dat? offline, local control of data)'
+        'text': 'Modern web applications are built with the assumption of connectivity. This is not true for many parts of the world, in disaster situations, and in cases where surveillance is a concern. Dat-based applications are designed to work offline and online, without bias.'
       }
     ],
     cta: cta(state, emit, {

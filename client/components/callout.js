@@ -23,7 +23,7 @@ module.exports = function (state, emit) {
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
   ${cta(state, emit, {
-    href: 'https://docs.datproject.org.org',
+    href: 'https://docs.datproject.org',
     klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
     text: 'Getting Started',
     id: 'docs'
@@ -40,7 +40,7 @@ module.exports = function (state, emit) {
           </p>
           <ul class="dat-list list p0 lh-copy">
             <li class="f5 mb2">
-              <b>Community-Driven:</b> learn more about how people use Dat.
+              <b>Community-Driven:</b> learn more about tools people are building on Dat.
             </li>
             <li class="f5 mb2">
               <b>User Applications:</b> discover Beaker Browser, Dat Desktop, and more.
