@@ -71,7 +71,7 @@ module.exports = function (props) {
     text.innerHTML = item.text
     return html`
       <div class="fl w-third-ns w-100">
-        <h3 class="f3 mt0">${item.title}</h3>
+        <h3 class="f3 mt0 pr2">${item.title}</h3>
         ${text}
       </div>
     `

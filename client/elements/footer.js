@@ -8,9 +8,8 @@ module.exports = function () {
         <div class="fl w-third">
           <h4 class="f4 horizontal-rule-footer">Explore</h4>
           <ul class="dat-list p0 list lh-copy">
-            ${liLink('http://chat.datproject.org', 'Community')}
+            ${liLink('http://chat.datproject.org', 'Chat')}
             ${liLink('https://www.datprotocol.com/', 'Dat Protocol')}
-            ${liLink('https://datbase.org', 'DatBase')}
           </ul>
         </div>
         <div class="fl w-third">

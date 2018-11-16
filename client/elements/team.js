@@ -6,7 +6,7 @@ module.exports = function () {
   const copyClass = 'f4 lh-copy'
 
   return html`
-    <div>
+    <div id="dat-wg">
       <h2 class="f2 horizontal-rule">Dat Project Governance Team</h2>
       <p class="${copyClass}">The Dat Project Governance Team supports the strategy and vision for Dat Project, led by core Dat Project members and long-time outside contributors. This group is also involved in financial and legal decisions regarding the Dat Project in collaboration with Code for Science and Society. Learn more about <a href="https://github.com/datproject/governance">Dat Project governance</a>.</p>
       <div class="${flexClass} w-100">

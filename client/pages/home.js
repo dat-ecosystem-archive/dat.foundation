@@ -27,7 +27,7 @@ const splash = css`
 `
 
 module.exports = function (state, emit) {
-  emit(state.events.DOMTITLECHANGE, 'Dat Project - Welcome!')
+  emit(state.events.DOMTITLECHANGE, 'dat:// — a peer-to-peer protocol')
 
   return html`
     <body>
@@ -36,21 +36,46 @@ module.exports = function (state, emit) {
       <div class="${splash} mh2 mh4-l center contain">
         <section class="tc pa3 pt5-ns">
           <h1 class="f2 f1-l mb0 lh-title">
-            A distributed <span class="color-green">dat</span>a community
+            <span class="color-green">dat://</span> — a peer-to-peer protocol
           </h1>
           <h2 class="f3 mt3 mb3 color-neutral-50 fw4">
-            Dat is a nonprofit-backed data sharing protocol for applications of the future.
+           A community-driven project powering a next-generation Web
           </h2>
-
-          ${cta(state, emit, {
-    href: 'https://docs.datproject.org/install',
-    klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
-    text: 'Install Now',
-    id: 'install'
-  })}
+          <div class="w-100 mt5">
+            <img class="center h4" src="/public/img/dat-logo.png" alt="Dat Project">
+          </div>
           ${callout(state, emit)}
         </section>
       </div>
+      ${homeSection({
+    'bgColor': 'bg-neutral',
+    'title': 'A bit more about Dat...',
+    'subtitle': `
+       Core pieces of the web shape how we communicate and organize. However, these pieces are increasingly controlled by large monopolies. In building Dat, we envision a future of community-driven tools backed by nonprofit organizations.
+        `,
+    'sections': [
+      {
+        'title': 'What is a web protocol?',
+        'text': 'Whether you know it or not, you probably use at least one web protocol everyday — HTTP! Similar to HTTP, the Dat Protocol uses the Internet to transfer data between computers (plus a lot more, read on!). Dat leverages existing infrastructure while making the web more user-centered.'
+      },
+      {
+        'title': 'Who runs the Dat Project?',
+        'text': `
+            Dat is an open source project with community governance through a set of working groups. Dat is funded by donations and grants, with sponsorship by Code for Science & Society, a US nonprofit. Dat aims to support maintenance and core feature development through public funding.
+            `
+      },
+      {
+        'title': 'Why create a new protocol?',
+        'text': 'The next-generation web includes public & private places for communities, without selling data to advertisers. Designed initially for research data, Dat builds on the existing web while providing more user control. Dat allows users to share directly and establish new models for digital collaboration.'
+      }
+    ],
+    cta: cta(state, emit, {
+      id: 'docs-cta',
+      href: 'https://docs.datproject.org',
+      text: 'Read More About Dat',
+      klass: 'f5 white bg-animate bg-green hover-bg-dark-green pa3 link'
+    })
+  })}
       ${sponsors({
     klass: 'bg-neutral-04',
     cta: cta(state, emit, {
@@ -62,68 +87,61 @@ module.exports = function (state, emit) {
   })}
       ${homeSection({
     'bgColor': 'bg-neutral',
-    'title': 'Why use Dat Protocol?',
+    'title': 'Who uses Dat?',
     'subtitle': `
-          We set out to improve access to public data and created a new protocol along the way.
-          Learn more at <a
-            target="_blank"
-            rel="noopener noreferrer"
-            class="link"
-            href="https://www.datprotocol.com/"
-            >datprotocol.com</a>.
+          Initially designed for sharing and archiving research data, Dat is now used by a wide variety of communities.
         `,
     'sections': [
       {
-        'title': 'Distributed Sync',
-        'text': 'Modeled after the best parts of Git, BitTorrent, and the internet, the Dat Protocol is a peer-to-peer protocol for syncing files and data across distributed networks.'
+        'title': 'Researchers',
+        'text': 'With the <a href="https://blog.datproject.org/tag/science/">Dat in the Lab</a> project, we found places for Dat in existing researcher workflows, from basic data sharing to reproducible containers. We continue to work with researchers and libraries to identify high-impact uses of Dat in research.'
       },
       {
-        'title': 'Faster Speeds',
+        'title': 'Creators',
         'text': `
-              Improving speeds while using less bandwidth sounds impossible.
-              The Dat Protocol makes it the default by using a peer-to-peer network.
-              Seamlessly add or remove hosts as needed.
+              Applications, such as the <a href="https://dat.land">Beaker Browser</a>, make publishing as simple as creating a website & sharing a Dat link. Providing true one-click publishing without selling data, creators can be empowered to share with their communities. We envision a future ecosystem developed around user-centered publishing.
             `
       },
       {
-        'title': 'Efficient Storage',
-        'text': 'Data is deduplicated between versions, reducing bandwidth costs and improving speed. Developers can create custom storage that work over a variety of protocols.'
+        'title': 'Activists',
+        'text': 'Modern web applications are built with the assumption of connectivity. This is not true for many parts of the world, in disaster situations, and in cases where surveillance is a concern. Dat-based applications are designed to work offline and online, without bias.'
       }
     ],
     cta: cta(state, emit, {
       id: 'docs-cta',
-      href: 'https://docs.datproject.org',
-      text: 'Read the documentation',
+      href: 'https://dat.land',
+      text: 'Explore More on Dat.Land',
       klass: 'f5 white bg-animate bg-green hover-bg-dark-green pa3 link'
     })
   })}
       ${homeSection({
-    'title': 'Imagining a better future',
+    'title': 'Striving for Value-Driven Technology',
     'subtitle': `
-          Along the way of building the future we got lost.
-          We need public technology driven by communities and humans.
+          Along the way of building the web we got lost.
+          We need technology driven by communities & built for public well-being.
         `,
     'sections': [
       {
-        'title': 'Human Technology',
+        'title': 'Community First',
         'text': `
-              We believe that not-for-profit and human-driven technology will be the future of the open web.
-              We must also nurture an inclusive community creating fair technology.
+              We believe not-for-profit and community-driven technology will make the future of the web more inclusive.
+              To build that future, we must develop with communities not served by the current monopoly-driven system.
             `
       },
       {
-        'title': 'User-First Applications',
+        'title': 'Transparent Funding',
         'text': `
-              User-driven applications take priority in the Dat Protocol.
-              Applications using Dat get encrypted transfer and content verification built-in.
+              We believe digital tools we rely on for community organization &  communication should be transparently funded and operated. Dat Project aims to be <a href="https://github.com/datproject/organization" target="_blank" class="link">transparent</a> about funding and the process of fundraising.
             `
       },
       {
-        'title': 'Public Infrastructure',
+        'title': 'Open Governance',
         'text': `
-              Existing Internet infrastructure was funded and built for the public.
-              Large monopolies now control the web.
-              Can we imagine a new model for technology infrastructure?
+            At the scale of the web, every decision can have a massive impact on our political systems, social well-being, and the future of humanity. We believe these decisions should not be made by private groups aiming to increase profits. Dat Project runs openly through a series of <a
+            target="_blank"
+            class="link"
+            href="/about#team"
+            >working groups</a>.
             `
       }
     ],
