@@ -61,8 +61,7 @@ module.exports = function (state, emit) {
       {
         'title': 'Who runs the Dat Project?',
         'text': `
-            Dat is an open source project with community governance through a set of working groups. Dat is funded by donations and grants, with sponsorship by Code for Science & Society, a US nonprofit. Dat aims to support maintenance and core feature development through public funding.
-            `
+            Dat is an open source project with community governance through a set of working groups. Dat has largely been funded by donations and grants, with sponsorship by Code for Science & Society, a US nonprofit.             `
       },
       {
         'title': 'Why create a new protocol?',
