@@ -1,6 +1,6 @@
 # Dat Project Website
 
-Code for [datproject.org](http://datproject.org) website.
+Code for [datproject.org](https://datproject.org) website.
 
 #### Built With
 
