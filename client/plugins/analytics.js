@@ -42,7 +42,7 @@ module.exports = function (state, emitter) {
       state.analytics.scrollPer = Math.max(getScrollPercent(), state.analytics.scrollPer)
       state.analytics.ctaEls.map((el, i) => {
         if (isScrolledIntoView(el)) {
-          state.analytics.ctaViews[el.id] = {text: el.innerHTML, url: el.href}
+          state.analytics.ctaViews[el.id] = { text: el.innerHTML, url: el.href }
           state.analytics.ctaEls.splice(i, 1)
         }
       })

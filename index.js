@@ -6,7 +6,7 @@ css('dat-colors')
 css('./client/css/app.css')
 css('./client/css/fonts.css') // can't delete without getting bankai error?
 
-const app = choo({hash:false})
+const app = choo({ hash: false })
 app.use(require('./client/plugins/scroll-top'))
 if (process.env.ANALYTICS) app.use(require('./client/plugins/analytics'))
 
