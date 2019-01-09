@@ -1,0 +1,16 @@
+{
+  "title": "datproject.org",
+  "description": "Dat Project website on Dat about Dat",
+  "type": ["website"],
+  "links": {
+    "license": [{
+      "href": "http://creativecommons.org/licenses/by-nc/4.0/",
+      "title": "CC BY-NC 4.0"
+    }],
+    "payment": [{
+      "href": "https://opencollective.com/dat"
+    }]
+  },
+  "fallback_page": "/index.html",
+  "web_root": "/dist"
+}
