@@ -7,8 +7,9 @@ module.exports = {
   ],
   'other': [
     {name: 'Georgiy Shibaev', github: 'RangerMauve', description: 'Based in Ottowa, Canada. Open source software engineer focused on developer experience, the command line tool, and documentation.'},
-    {name: 'Andrew Osheroff', github: 'andrewosh', description: 'Based in Copenhagen, improving performance and APIs in Hyperdrive.'}
-   ],
+    {name: 'Andrew Osheroff', github: 'andrewosh', description: 'Based in Copenhagen, improving performance and APIs in Hyperdrive.'},
+    {name: 'David Clements', github: 'davidmarkclements', description: 'Working on improving peer discovery, networking, and connections in Hyperswarm'}
+  ],
   'wg': [
     { name: 'Mathias Buus', github: 'mafintosh', description: 'Hyperdivision' },
     { name: 'Paul Frazee', github: 'pfrazee', description: 'Beaker Browser' },
