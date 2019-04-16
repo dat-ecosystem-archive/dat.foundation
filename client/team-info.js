@@ -14,7 +14,6 @@ module.exports = {
     { name: 'Mathias Buus', github: 'mafintosh', description: 'Hyperdivision' },
     { name: 'Paul Frazee', github: 'pfrazee', description: 'Beaker Browser' },
     { name: 'Karissa McKelvey', github: 'karissa', description: 'Dat Project, Digital Democracy' },
-    { name: 'Danielle Robinson, PhD', github: 'daniellecrobinson', description: 'Code for Science & Society' },
     { name: 'Joe Hand', github: 'joehand', description: 'Code for Science & Society' },
     { name: 'Brian Newbold', github: 'bnewbold', description: 'Internet Archive' }
   ],
