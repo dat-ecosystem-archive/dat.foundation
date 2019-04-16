@@ -6,8 +6,8 @@ module.exports = {
     { name: 'Joe Hand', github: 'joehand', description: 'Joe Hand is Co-Executive Director at Code for Science & Society and a core developer on Dat Project with a focus on developing and managing data-focused programs for researchers and community-driven organizations. Previously, Joe managed a global project at the Santa Fe Institute to transform data collection practices of an international NGO, operating in slums across 30 countries in the Global South' }
   ],
   'other': [
-    {name: 'Georgiy Shibaev', github: 'RangerMauve', description: 'Based in Ottowa, Canada and working on developer-facing APIs, the command line tool, and documentation.'},
-    {name: 'Andrew Osheroff', github: 'andrewosh', description: 'Based in Copenhagen, working on performance and advancing developer-facing APIs in Hyperdrive.'}
+    {name: 'Georgiy Shibaev', github: 'RangerMauve', description: 'Based in Ottowa, Canada. Open source software engineer focused on developer experience, the command line tool, and documentation.'},
+    {name: 'Andrew Osheroff', github: 'andrewosh', description: 'Based in Copenhagen, improving performance and APIs in Hyperdrive.'}
    ],
   'wg': [
     { name: 'Mathias Buus', github: 'mafintosh', description: 'Hyperdivision' },
