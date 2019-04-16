@@ -1,12 +1,13 @@
 module.exports = {
   'governance': [
     { name: 'Mathias Buus', github: 'mafintosh', description: 'Mathias is a self taught JavaScript hacker from Copenhagen that has been working with Node.js since the 0.2 days. Mathias likes to work with P2P and distributed systems and is the author of more than 650 modules on npm. He is also the Chief of Research on the Beaker Browser, leading the technical work on the Dat Protocol.' },
-    { name: 'Karissa McKelvey', github: 'karissa', description: 'Karissa is a board member at Code for Science & Society and worked on Dat  since 2014. She is currently an open source developer at Digital Democracy. Former <a href="http://scholar.google.com/citations?user=RM2tB8EAAAAJ&hl=en">academic</a> experienced in building interactive data visualization and collaboration tools.' },
+    { name: 'Karissa McKelvey', github: 'karissa', description: 'Karissa is a board member at Code for Science & Society and worked on Dat since 2014. She is currently an open source developer at Digital Democracy. Former <a href="http://scholar.google.com/citations?user=RM2tB8EAAAAJ&hl=en">academic</a> experienced in building interactive data visualization and collaboration tools.' },
     { name: 'Danielle Robinson, PhD', github: 'daniellecrobinson', description: 'Danielle Robinson is Co-Executive Director of Code for Science & Society where she works support and advise people who create open source technology in the public interest. In 2016, she completed a PhD in neuroscience at Oregon Health & Science University. Then as a Mozilla Fellow for Science she ran Working Open Workshops, explored decentralized approaches to data preservation, and advocated for open access to research.' },
     { name: 'Joe Hand', github: 'joehand', description: 'Joe Hand is Co-Executive Director at Code for Science & Society and a core developer on Dat Project with a focus on developing and managing data-focused programs for researchers and community-driven organizations. Previously, Joe managed a global project at the Santa Fe Institute to transform data collection practices of an international NGO, operating in slums across 30 countries in the Global South' }
   ],
   'other': [
-    {name: 'Georgiy Shibaev', github: 'RangerMauve', description: 'RangerMauve is great!'}
+    {name: 'Georgiy Shibaev', github: 'RangerMauve', description: 'Based in Ottowa, Canada and working on developer-facing APIs, the command line tool, and documentation.'},
+    {name: 'Andrew Osheroff', github: 'andrewosh', description: 'Based in Copenhagen, working on performance and advancing developer-facing APIs in Hyperdrive.'}
    ],
   'wg': [
     { name: 'Mathias Buus', github: 'mafintosh', description: 'Hyperdivision' },
