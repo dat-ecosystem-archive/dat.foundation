@@ -18,7 +18,6 @@ module.exports = function () {
       <p class="${copyClass}">The Dat Protocol Working Group advances the protocol development and third-party implementations. This group documents all aspects of the Dat Protocol specification and makes decisions regarding protocol changes. Learn more about the <a href="https://github.com/datprotocol/working-group">Dat Protocol working group</a>.</p>
       <div class="${flexClass} w-100">
         ${teamInfo.wg.map((person) => {
-    person.description = null
     return personBox(person)
   })}
       </div>
