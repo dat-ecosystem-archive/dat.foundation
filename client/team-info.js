@@ -13,7 +13,7 @@ module.exports = {
   'wg': [
     { name: 'Mathias Buus', github: 'mafintosh', description: 'Hyperdivision' },
     { name: 'Paul Frazee', github: 'pfrazee', description: 'Beaker Browser' },
-    { name: 'Karissa McKelvey', github: 'karissa', description: 'Dat Project, Digital Democracy' },
+    { name: 'Karissa McKelvey', github: 'karissa', description: 'Digital Democracy' },
     { name: 'Joe Hand', github: 'joehand', description: 'Code for Science & Society' },
     { name: 'Brian Newbold', github: 'bnewbold', description: 'Internet Archive' }
   ],
