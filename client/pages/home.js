@@ -3,6 +3,7 @@ const css = require('sheetify')
 const datIcons = require('dat-icons')
 const homeSection = require('../components/home-section')
 const sponsors = require('../elements/home/sponsors')
+const projects = require('../elements/home/projects')
 const callout = require('../components/callout')
 const cta = require('../components/cta-btn')
 const header = require('../elements/header')
@@ -36,107 +37,38 @@ module.exports = function (state, emit) {
       <div class="${splash} mh2 mh4-l center contain">
         <section class="tc pa3 pt5-ns">
           <h1 class="f2 f1-l mb0 lh-title">
-            <span class="color-green">dat://</span> — a peer-to-peer protocol
+            <span class="color-green">dat://</span> — a peer-to-peer web protocol
           </h1>
           <h2 class="f3 mt3 mb3 color-neutral-50 fw4">
-           A community-driven project powering a next-generation Web
+           Community-driven project for distributed data syncronization
           </h2>
           <div class="w-100 mt5">
-            <img class="center h4" src="/public/img/dat-logo.png" alt="Dat Project">
+            <img class="center h4" src="/public/img/dat-logo.png" alt="Dat Foundation">
           </div>
           ${callout(state, emit)}
         </section>
       </div>
-      ${homeSection({
-    'bgColor': 'bg-neutral',
-    'title': 'A bit more about Dat...',
-    'subtitle': `
-       Core pieces of the web shape how we communicate and organize. However, these pieces are increasingly controlled by large monopolies. In building Dat, we envision a future of community-driven tools backed by nonprofit organizations.
-        `,
-    'sections': [
-      {
-        'title': 'What is a web protocol?',
-        'text': 'Whether you know it or not, you probably use at least one web protocol everyday — HTTP! Similar to HTTP, the Dat Protocol uses the Internet to transfer data between computers (plus a lot more, read on!). Dat leverages existing infrastructure while making the web more user-centered.'
-      },
-      {
-        'title': 'Who runs the Dat Project?',
-        'text': `
-            Dat is an open source project with community governance through a set of working groups. Dat has largely been funded by donations and grants, with sponsorship by Code for Science & Society, a US nonprofit.             `
-      },
-      {
-        'title': 'Why create a new protocol?',
-        'text': 'The next-generation web includes public & private places for communities, without selling data to advertisers. Designed initially for research data, Dat builds on the existing web while providing more user control. Dat allows users to share directly and establish new models for digital collaboration.'
-      }
-    ],
-    cta: cta(state, emit, {
-      id: 'docs-cta',
-      href: 'https://docs.datproject.org',
-      text: 'Read More About Dat',
-      klass: 'f5 white bg-animate bg-green hover-bg-dark-green pa3 link'
-    })
-  })}
-      ${sponsors({
-    klass: 'bg-neutral-04',
-    cta: cta(state, emit, {
-      id: 'donate-cta',
-      href: 'https://donate.datproject.org',
-      text: 'Donate Today',
-      klass: 'no-underline f4 tc db w-100 pv3 bg-animate bg-green hover-bg-dark-green white'
-    })
+      ${projects({
+    klass: 'bg-white'
   })}
       ${homeSection({
-    'bgColor': 'bg-neutral',
-    'title': 'Who uses Dat?',
+    'title': 'Value-Driven Technology',
     'subtitle': `
-          Initially designed for sharing and archiving research data, Dat is now used by a wide variety of communities.
-        `,
-    'sections': [
-      {
-        'title': 'Researchers',
-        'text': 'With the <a href="https://blog.datproject.org/tag/science/">Dat in the Lab</a> project, we found places for Dat in existing researcher workflows, from basic data sharing to reproducible containers. We continue to work with researchers and libraries to identify high-impact uses of Dat in research.'
-      },
-      {
-        'title': 'Creators',
-        'text': `
-              Applications, such as the <a href="https://dat.land">Beaker Browser</a>, make publishing as simple as creating a website & sharing a Dat link. Providing true one-click publishing without selling data, creators can be empowered to share with their communities. We envision a future ecosystem developed around user-centered publishing.
-            `
-      },
-      {
-        'title': 'Activists',
-        'text': 'Modern web applications are built with the assumption of connectivity. This is not true for many parts of the world, in disaster situations, and in cases where surveillance is a concern. Dat-based applications are designed to work offline and online, without bias.'
-      }
-    ],
-    cta: cta(state, emit, {
-      id: 'docs-cta',
-      href: 'https://dat.land',
-      text: 'Explore More on Dat.Land',
-      klass: 'f5 white bg-animate bg-green hover-bg-dark-green pa3 link'
-    })
-  })}
-      ${homeSection({
-    'title': 'Striving for Value-Driven Technology',
-    'subtitle': `
-          Along the way of building the web we got lost.
-          We need technology driven by communities & built for public well-being.
+          Technology driven by communities & built for public well-being.
         `,
     'sections': [
       {
         'title': 'Community First',
-        'text': `
-              We believe not-for-profit and community-driven technology will make the future of the web more inclusive.
-              To build that future, we must develop with communities not served by the current monopoly-driven system.
-            `
+        'text': `The Dat Protocol Foundation is a small non-profit group that provides social and technical infrastructure for the consortium of contributors to the Dat Protocol.`
       },
       {
         'title': 'Transparent Funding',
-        'text': `
-              We believe digital tools we rely on for community organization &  communication should be transparently funded and operated. Dat Project aims to be <a href="https://github.com/datproject/organization" target="_blank" class="link">transparent</a> about funding and the process of fundraising.
-            `
+        'text': `We believe information and communication technology should be <a href="https://github.com/datproject/organization" target="_blank" class="link">transparently funded and operated</a>. Development of the core protocol is driven entirely by contributors from the consortium and grants from external organizations, keeping it neutral and flexible.`
       },
       {
         'title': 'Open Governance',
         'text': `
-            At the scale of the web, every decision can have a massive impact on our political systems, social well-being, and the future of humanity. We believe these decisions should not be made by private groups aiming to increase profits. Dat Project runs openly through a series of <a
+            At the scale of the web, every decision can have a massive impact on our political systems, social well-being, and the future of humanity. Dat Protocol Foundation runs openly through a series of <a
             target="_blank"
             class="link"
             href="/about#team"
@@ -149,6 +81,15 @@ module.exports = function (state, emit) {
       href: 'https://blog.datproject.org',
       text: 'Learn More on Dat Blog',
       klass: 'f5 white bg-animate bg-green hover-bg-dark-green pa3 link'
+    })
+  })}
+      ${sponsors({
+    klass: 'bg-neutral-04',
+    cta: cta(state, emit, {
+      id: 'donate-cta',
+      href: 'https://donate.datproject.org',
+      text: 'Donate Today',
+      klass: 'no-underline f4 tc db w-100 pv3 bg-animate bg-green hover-bg-dark-green white'
     })
   })}
     </div>

@@ -10,15 +10,12 @@ module.exports = function (state, emit) {
             <svg><use xlink:href="#daticon-star-dat"/></svg>
           </div>
           <h4 class="f4 mb0 tc">Documentation</h4>
-          <p class="tc mb0 f7 ttu dat-neutral-70">
-            Learn About Dat
-          </p>
           <ul class="dat-list list p0 lh-copy">
             <li class="f5 mb2">
-              <b>Command Line:</b> install and learn how to use the Dat command line.
+              <b>Command Line:</b> sync data to your peer network.
             </li>
             <li class="f5 mb2">
-              <b>Javascript APIs:</b> build peer-to-peer applications in Node.js.
+              <b>APIs:</b> build peer-to-peer applications in Node.js and the browser.
             </li>
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
@@ -33,43 +30,37 @@ module.exports = function (state, emit) {
       </div>
       <div class="flex w-100 w-third-ns bg-white dat-shadow mv4-ns mv2 mh3-l mh1-ns pa3">
         <div class="flex-column flex">
-          <div class="mt3 w3 h3 center"><svg><use xlink:href="#daticon-network"/></svg></div>
-          <h4 class="f4 mb0 tc">Dat Ecosystem</h4>
-          <p class="tc mb0 f7 ttu dat-neutral-70">
-            Community Applications & Tools
-          </p>
+          <div class="mt3 w3 h3 center">
+            <svg><use xlink:href="#daticon-network"/></svg>
+          </div>
+          <h4 class="f4 mb0 tc">Why Dat?</h4>
           <ul class="dat-list list p0 lh-copy">
             <li class="f5 mb2">
-              <b>Community-Driven:</b> learn more about tools people are building on Dat.
-            </li>
+              <b>Neutral:</b> Like core internet protocols, Dat is un-opinionated about application-level concerns. </li>
             <li class="f5 mb2">
-              <b>User Applications:</b> discover Beaker Browser, Dat Desktop, and more.
+              <b>Resilient:</b> Works offline and with limited connectivity over a distributed network.
             </li>
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
-            ${cta(state, emit,
-    {
-      href: 'https://dat.land',
-      klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
-      text: 'Explore Dat Land',
-      id: 'dat-land'
-    })}
+  ${cta(state, emit, {
+    href: 'https://datprotocol.github.io/how-dat-works/',
+    klass: 'bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2',
+    text: 'How Dat Works',
+    id: 'how-dat-works'
+  })}
           </p>
         </div>
       </div>
       <div class="flex w-100 w-third-ns bg-white dat-shadow mv4-ns mv2 mh3-l mh1-ns pa3">
         <div class="flex-column flex">
           <div class="mt3 w3 h3 center"><svg><use xlink:href="#daticon-happy-dat"/></svg></div>
-          <h4 class="tc f4 mb0">Dat Protocol</h4>
-          <p class="tc mb0 f7 ttu dat-neutral-70">
-            How Dat Works
-          </p>
+          <h4 class="tc f4 mb0">Community-Driven</h4>
           <ul class="dat-list list p0 lh-copy">
             <li class="f5 mb2">
-              <b>Protocol Specification:</b> learn about the Dat protocol and how it works.
+              <b>Protocol Specification:</b> learn about the roadmap how you can get involved.
             </li>
             <li class="f5 mb2">
-              <b>Working Group:</b> see how our community creates the Dat protocol.
+              <b>Working Group:</b> a community-based governance model.
             </li>
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
@@ -82,6 +73,7 @@ module.exports = function (state, emit) {
           </p>
         </div>
       </div>
+
     </div>
   `
 }

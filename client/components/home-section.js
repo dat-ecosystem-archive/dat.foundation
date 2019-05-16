@@ -31,10 +31,8 @@ Options:
 
 module.exports = function (props) {
   props = Object.assign({
-    bgColor: 'bg-white'
+    bgColor: 'bg-neutral'
   }, props)
-
-  if (!props.color && props.bgColor === 'bg-neutral') props.color = 'white'
 
   // Allow html
   const subtitle = html`<p class="f4 mt1 ${props.bgColor !== 'bg-neutral' ? 'color-neutral-70' : 'color-neutral-30'} horizontal-rule"></p>`
@@ -44,7 +42,7 @@ module.exports = function (props) {
     <section class="${props.bgColor} ${props.color ? props.color : ''}">
       <div class="pv2 ph3 pa4-m mw8-ns center-ns">
         <header>
-          <h2 class="f2 mb0">${props.title}</h2>
+          <h2 class="white f2 mb0">${props.title}</h2>
           ${subtitle}
         </header>
         <div class="pv3 cf">
@@ -71,7 +69,7 @@ module.exports = function (props) {
     text.innerHTML = item.text
     return html`
       <div class="fl w-third-ns w-100">
-        <h3 class="f3 mt0 pr2">${item.title}</h3>
+        <h3 class="color-neutral-30 f3 mt0 pr2">${item.title}</h3>
         ${text}
       </div>
     `

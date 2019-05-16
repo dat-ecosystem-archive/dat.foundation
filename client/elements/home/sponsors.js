@@ -6,7 +6,7 @@ module.exports = function (props) {
       <div class="pv2 ph3 pa4-m mw8-ns center-ns">
       <header>
         <h2 class="f2 mb0">Sponsors and Supporters</h2>
-        <p class="f4 mt1 color-neutral-70 horizontal-rule">Dat is supported by donations and grants. Want to learn more? Check our <a
+        <p class="f4 mt1 color-neutral-70 horizontal-rule">Dat Foundation is supported by donations and grants. Want to learn more? Check our <a
             target="_blank"
             class="link"
             href="https://github.com/datproject/organization"
@@ -27,6 +27,9 @@ module.exports = function (props) {
         </a>
         <a class="inline-flex items-center mv2 mh3" href="https://www.moore.org/" title="Gordon and Betty Moore Foundation">
           <img class="h3 w-auto" src="/public/img/moore.png" alt="Gordon and Betty Moore Foundation">
+        </a>
+        <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://wireline.io/" title="Wireline">
+          <img class="w-auto h3" src="/public/img/wireline.png" alt="Wireline">
         </a>
       </div>
       <div class="pv3">
