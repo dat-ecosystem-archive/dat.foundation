@@ -87,7 +87,7 @@ module.exports = function (state, emit) {
     klass: 'bg-neutral-04',
     cta: cta(state, emit, {
       id: 'donate-cta',
-      href: 'https://donate.datproject.org',
+      href: 'https://opencollective.com/dat',
       text: 'Donate Today',
       klass: 'no-underline f4 tc db w-100 pv3 bg-animate bg-green hover-bg-dark-green white'
     })
