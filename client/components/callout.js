@@ -38,7 +38,7 @@ module.exports = function (state, emit) {
             <li class="f5 mb2">
               <b>Neutral:</b> Like core internet protocols, Dat is un-opinionated about application-level concerns. </li>
             <li class="f5 mb2">
-              <b>Resilient:</b> Works offline and with limited connectivity over a distributed network.
+              <b>Resilient:</b> Works offline and with limited connectivity over a distributed peer-to-peer network.
             </li>
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
@@ -57,7 +57,7 @@ module.exports = function (state, emit) {
           <h4 class="tc f4 mb0">Community-Driven</h4>
           <ul class="dat-list list p0 lh-copy">
             <li class="f5 mb2">
-              <b>Protocol Specification:</b> learn about the roadmap how you can get involved.
+              <b>Protocol Specification:</b> learn about the roadmap and how you can get involved.
             </li>
             <li class="f5 mb2">
               <b>Working Group:</b> a community-based governance model.

@@ -37,7 +37,7 @@ module.exports = function (state, emit) {
       <div class="${splash} mh2 mh4-l center contain">
         <section class="tc pa3 pt5-ns">
           <h1 class="f2 f1-l mb0 lh-title">
-            <span class="color-green">dat://</span> — a peer-to-peer web protocol
+            <span class="color-green">dat://</span> — a peer-to-peer protocol
           </h1>
           <h2 class="f3 mt3 mb3 color-neutral-50 fw4">
            Community-driven project for distributed data syncronization
@@ -54,12 +54,12 @@ module.exports = function (state, emit) {
       ${homeSection({
     'title': 'Value-Driven Technology',
     'subtitle': `
-          Technology driven by communities & built for public well-being.
+          Technology built by community, financed responsibly, and given away for free to the public
         `,
     'sections': [
       {
         'title': 'Community First',
-        'text': `The Dat Protocol Foundation is a small non-profit group that provides social and technical infrastructure for the consortium of contributors to the Dat Protocol.`
+        'text': `The Dat Foundation is a small non-profit group that provides social and technical infrastructure for the consortium of projects and working groups that help build the Dat Protocol.`
       },
       {
         'title': 'Transparent Funding',
@@ -68,7 +68,7 @@ module.exports = function (state, emit) {
       {
         'title': 'Open Governance',
         'text': `
-            At the scale of the web, every decision can have a massive impact on our political systems, social well-being, and the future of humanity. Dat Protocol Foundation runs openly through a series of <a
+            At the scale of the web, every decision can have a massive impact on our political systems and social well-being. Dat Protocol is governed openly through a series of <a
             target="_blank"
             class="link"
             href="/about#team"
