@@ -17,7 +17,7 @@ module.exports = function (props) {
           <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://peermaps.org/" title="Peermaps">
             <img class="h3 w-auto" src="/public/img/peermaps.png" alt="Peermaps">
           </a>
-          <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://inkandswitch.org/" title="Ink & Switch">
+          <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://inkandswitch.com/" title="Ink & Switch">
             <img class="h3 w-auto" src="/public/img/inkandswitch.png" alt="Ink & Switch">
           </a>
           <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://hyperdivision.dk/" title="Hyperdivision">
