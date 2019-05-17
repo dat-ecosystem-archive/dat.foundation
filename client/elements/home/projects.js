@@ -5,7 +5,7 @@ module.exports = function (props) {
     <section class="${props.klass}">
       <div class="pa3 ph3 pa4-m mw8-ns center-ns">
         <header>
-          <h2 class="f2 mb0">Who is using dat?</h2>
+          <h2 class="f2 mb0">Consortium of Projects</h2>
         </header>
         <div class="pt3 pb5 flex flex-wrap w-100">
           <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://beakerbrowser.org/" title="Beaker Browser">
