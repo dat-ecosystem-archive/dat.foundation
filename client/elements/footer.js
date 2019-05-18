@@ -8,7 +8,7 @@ module.exports = function () {
         <div class="fl w-third">
           <h4 class="f4 horizontal-rule-footer">Explore</h4>
           <ul class="dat-list p0 list lh-copy">
-            ${liLink('http://chat.datproject.org', 'Chat')}
+            ${liLink('https://datprotocol.github.io/how-dat-works/', 'How Dat Works')}
             ${liLink('https://www.datprotocol.com/', 'Dat Protocol')}
           </ul>
         </div>
@@ -23,13 +23,14 @@ module.exports = function () {
         <div class="fl w-third">
           <h4 class="f4 horizontal-rule-footer">Connect</h4>
           <ul class="dat-list list p0 lh-copy">
+            ${liLink('https://gitter.im/datproject/discussions', 'Chat')}
             ${liLink('https://twitter.com/dat_project', 'Twitter')}
             ${liLink('https://github.com/datproject', 'Github')}
           </ul>
         </div>
       </div>
       <p class="bt b--dat-neutral-80 color-neutral-50 tc f6 pv3">
-        <strong>Dat Project</strong> © 2018 • Source on <a class="color-neutral-50 hover-color-pink" href="https://github.com/datproject/datproject.org">github</a>
+        <strong>Dat Foundation</strong> © 2013 - 2019 • Source on <a class="color-neutral-50 hover-color-pink" href="https://github.com/datproject/datproject.org">github</a>
       </p>
     </section>
   </footer>
