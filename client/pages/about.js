@@ -20,7 +20,7 @@ module.exports = function (state, emit) {
         </header>
         <article class="">
           <p class="${copyClass}">
-            Dat is a nonprofit-backed community & open protocol for building apps of the future. The Dat Project imagines a web of commons created by global communities on open and secure protocols. We set out to improve access to public data and created a new protocol along the way, read more at <a href="https://www.datprotocol.com">datprotocol.com</a>. In our work on developing Dat, we found a under-served need. Decentralized software has potential to return control of digital information to the people. Today, building peer-to-peer applications presents both technical and ethical challenges but Dat is slowly changing that.
+            Dat is a community-driven project for distributed data syncronization. The Dat Foundation imagines a web of commons created by global communities on open and secure protocols. We set out to improve access to public data and created a new protocol along the way, read more at <a href="https://www.datprotocol.com">datprotocol.com</a>. In our work on developing Dat, we found a under-served need. Decentralized software has potential to return control of digital information to the people. Today, building peer-to-peer applications presents both technical and ethical challenges but Dat is slowly changing that.
           </p>
           <p class="${copyClass}">
             To encourage people to experiment and innovate with decentralized technology, we aim to make Dat foundational software for peer-to-peer applications – one that is sponsored by a mission-driven nonprofit. To realize this future, we aim to make Dat good at supporting the core needs of peer-to-peer applications. We hope that with our small but critical focus, we can create a strong building block for the Dat ecosystem.
@@ -32,7 +32,7 @@ module.exports = function (state, emit) {
             Supporters
           </h2>
           <p class="${copyClass}">
-            Dat Project is sponsored by <a href="http://codeforscience.org">Code for Science & Society</a>, a <span class="nowrap">U.S. 501(c)(3)</span> nonprofit. We've received funding from the <a href="https://knightfoundation.org/">Knight Foundation</a>, the <a href="https://sloan.org/">Alfred P. Sloan Foundation</a>, and the <a href="https://www.moore.org/">Gordon and Betty Moore Foundation</a>.
+            Dat Foundation is sponsored by <a href="http://codeforscience.org">Code for Science & Society</a>, a <span class="nowrap">U.S. 501(c)(3)</span> nonprofit. We received initial funding from the <a href="https://knightfoundation.org/">Knight Foundation</a>, the <a href="https://sloan.org/">Alfred P. Sloan Foundation</a>, the <a href="https://www.moore.org/">Gordon and Betty Moore Foundation</a>.
           </p>
         </article>
       </section>

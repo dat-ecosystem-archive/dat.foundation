@@ -7,8 +7,8 @@ module.exports = function () {
 
   return html`
     <div id="dat-wg">
-      <h2 class="f2 horizontal-rule">Dat Project Governance Team</h2>
-      <p class="${copyClass}">The Dat Project Governance Team supports the strategy and vision for Dat Project, led by core Dat Project members and long-time outside contributors. This group is also involved in financial and legal decisions regarding the Dat Project in collaboration with Code for Science and Society. Learn more about <a href="https://github.com/datproject/governance">Dat Project governance</a>.</p>
+      <h2 class="f2 horizontal-rule">Dat Foundation Governance</h2>
+      <p class="${copyClass}">The Dat Foundation Governance supports the collaboration, funding, and community management for Dat. This group is involved in financial and legal decisions regarding the Dat Foundation in collaboration with Code for Science and Society. Learn more about <a href="https://github.com/datproject/governance">Dat Foundation governance</a>.</p>
       <div class="${flexClass} w-100">
         ${teamInfo.governance.map((person) => {
     return personBox(person)
@@ -22,7 +22,7 @@ module.exports = function () {
   })}
       </div>
       <h2 class="f2 horizontal-rule">Key Community Collaborators</h2>
-      <p class="${copyClass}">Dat Project is driven forward by many community members, most contributing as volunteers. These key collaborators contribute maintainance and development to core pieces of the Dat ecosystem.</p>
+      <p class="${copyClass}">Dat Foundation is driven forward by many community members, most contributing as volunteers. These key collaborators contribute maintainance and development to core pieces of the Dat ecosystem.</p>
       <div class="${flexClass} w-100">
         ${teamInfo.other.map((person) => {
     return personBox(person)

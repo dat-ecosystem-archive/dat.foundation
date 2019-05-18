@@ -1,7 +1,7 @@
 {
-  "name": "datproject.org",
-  "version": "1.0.0",
-  "description": "Dat Project website",
+  "name": "dat.foundation",
+  "version": "2.0.0",
+  "description": "Dat Foundation website",
   "license": "MIT",
   "repository": {
     "type": "git",
