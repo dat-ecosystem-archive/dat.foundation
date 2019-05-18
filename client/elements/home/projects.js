@@ -8,7 +8,7 @@ module.exports = function (props) {
           <h2 class="f2 mb0">Consortium of Projects</h2>
         </header>
         <div class="pt3 pb5 flex flex-wrap w-100">
-          <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://beakerbrowser.org/" title="Beaker Browser">
+          <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://beakerbrowser.com/" title="Beaker Browser">
             <img class="h3 w-auto" src="/public/img/beaker.png" alt="Beaker Browser">
           </a>
           <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://wireline.io/" title="Wireline">
