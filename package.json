@@ -25,7 +25,7 @@
     "standard": "^12.0.1"
   },
   "dependencies": {
-    "choo": "^6.13.0",
+    "choo": "^6.13.3",
     "choo-devtools": "^2.5.1",
     "dat-colors": "^3.5.1",
     "dat-icons": "^2.5.2",
