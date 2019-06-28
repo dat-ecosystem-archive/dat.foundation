@@ -40,7 +40,7 @@ module.exports = function (state, emit) {
             <span class="color-green">dat://</span> — a peer-to-peer protocol
           </h1>
           <h2 class="f3 mt3 mb3 color-neutral-50 fw4">
-           Community-driven project for distributed data synchronization
+           Community-driven project for distributed data syncronization
           </h2>
           <div class="w-100 mt5">
             <img class="center h4" src="/public/img/dat-logo.png" alt="Dat Foundation">

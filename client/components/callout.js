@@ -36,10 +36,10 @@ module.exports = function (state, emit) {
           <h4 class="f4 mb0 tc">Why Dat?</h4>
           <ul class="dat-list list p0 lh-copy">
             <li class="f5 mb2">
-              <b>Neutral:</b> Like core internet protocols, Dat is un-opinionated about application-level concerns. </li>
-            <li class="f5 mb2">
               <b>Resilient:</b> Works offline and with limited connectivity over a distributed peer-to-peer network.
             </li>
+            <li class="f5 mb2">
+              <b>Neutral:</b> Dat is un-opinionated and flexible for creating a variety of applications. </li>
           </ul>
           <p class="tr mb0" style="margin-top:auto;">
   ${cta(state, emit, {
