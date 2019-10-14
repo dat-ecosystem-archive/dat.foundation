@@ -22,7 +22,7 @@
     "bankai": "^9.15.0",
     "dependency-check": "^3.3.0",
     "fair-analytics": "^1.2.2",
-    "standard": "^12.0.1"
+    "standard": "^13.1.0"
   },
   "dependencies": {
     "choo": "^6.13.3",
