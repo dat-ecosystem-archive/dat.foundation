@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+  <html lang="en-US" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- <script src="/43c799f8e059307e/bundle.js" defer integrity="sha512-Q8eZ+OBZMH44uZOlEupugY/oxzNy+uFvAVXPre/Po/C5TK67ntU+nNqouOyC/huDTFjRNbYfauxbXVitQqYo0Q=="></script> -->
+      <script>;(function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b})("undefined"!=typeof global?global:this);;(function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}})(this);</script>
+      <link rel="preload" as="font" crossorigin href="./public/fonts/Source+Sans+Pro_400_normal.ttf">
+      <link rel="preload" as="font" crossorigin href="./public/fonts/Source+Sans+Pro_400_normal.woff">
+      <link rel="preload" as="font" crossorigin href="./public/fonts/Source+Sans+Pro_700_normal.ttf">
+      <link rel="preload" as="font" crossorigin href="./public/fonts/Source+Sans+Pro_700_normal.woff">
+      <meta name="description" content="">
+      <meta name="theme-color" content="#fff">
+      <title>dat:// — a peer-to-peer protocol</title>
+      <style>
+        ._6b12417f>img{transition:transform .5s ease-in-out;width:inherit;}
+        ._6b12417f:focus>img,._6b12417f:hover>img{transform:rotate(360deg);}
+        ._6efdd8f5{background-repeat:no-repeat;background-position:center 225px;background-image:url(./public/img/bg-landing-page.svg);}
+        ._6efdd8f5>svg{width:inherit;height:inherit;}
+        @media screen and (min-width:30em){
+          body{margin:0;}
+          h1{font-size:2em;margin:.67em 0;}
+          a{background-color:transparent;}
+          b,strong{font-weight:bolder;}
+          img{border-style:none;}
+          .border-box,a,article,body,code,dd,div,dt,footer,h1,h2,h3,h4,h5,h6,header,html,
+          input[type=email],input[type=number],input[type=password],input[type=tel],
+          input[type=text],input[type=url],li,nav,p,pre,section,table,textarea,tr,ul{
+            box-sizing:border-box;
+          }
+          img{max-width:100%;}
+          .contain{background-size:contain!important;}
+          .ba{border-style:solid;border-width:1px;}
+          .bt{border-top-style:solid;border-top-width:1px;}
+          .bb{border-bottom-style:solid;border-bottom-width:1px;}
+          .b--green{border-color:#19a974;}
+          .br1{border-radius:.125rem;}
+          .cf:after,.cf:before{content:" ";display:table;}
+          .cf:after{clear:both;}
+          .dn{display:none;}
+          .db{display:block;}
+          .dib{display:inline-block;}
+          .dt{display:table;}
+          .dtc{display:table-cell;}
+          .flex{display:flex;}
+          .inline-flex{display:inline-flex;}
+          .flex-column{flex-direction:column;}
+          .flex-wrap{flex-wrap:wrap;}.items-center{align-items:center;}.fl{float:left;}.b{font-weight:700;}
+          .fw4{font-weight:400;}.fw6{font-weight:600;}.h2{height:2rem;}.h3{height:4rem;}.h4{height:8rem;}
+          .h-auto{height:auto;}.tracked{letter-spacing:.1em;}.lh-title{line-height:1.25;}.lh-copy{line-height:1.5;}
+          .link{text-decoration:none;}.link,.link:active,.link:focus,.link:hover,.link:link,.link:visited{transition:color .15s ease-in;}
+          .link:focus{outline:1px dotted currentColor;}.list{list-style-type:none;}.mw8{max-width:64rem;}.w2{width:2rem;}.w3{width:4rem;}
+          .w5{width:16rem;}.w-25{width:25%;}.w-75{width:75%;}.w-100{width:100%;}.w-third{width:33.33333%;}.w-auto{width:auto;}.black-70{color:rgba(0,0,0,.7);}
+          .white{color:#fff;}.bg-white{background-color:#fff;}.bg-green{background-color:#19a974;}
+          .hover-bg-dark-green:focus,.hover-bg-dark-green:hover{background-color:#137752;}.pa3{padding:1rem;}
+          .pr2{padding-right:.5rem;}.pr3{padding-right:1rem;}.pb5{padding-bottom:4rem;}.pt2{padding-top:.5rem;}
+          .pt3{padding-top:1rem;}.pv2{padding-top:.5rem;padding-bottom:.5rem;}.pv3{padding-top:1rem;padding-bottom:1rem;}
+          .ph3{padding-left:1rem;padding-right:1rem;}.ml1{margin-left:.25rem;}.mr2{margin-right:.5rem;}.mr3{margin-right:1rem;}
+          .mb0{margin-bottom:0;}.mb2{margin-bottom:.5rem;}.mb3{margin-bottom:1rem;}.mb4{margin-bottom:2rem;}.mt0{margin-top:0;}
+          .mt1{margin-top:.25rem;}.mt3{margin-top:1rem;}.mt5{margin-top:4rem;}.mv0{margin-top:0;margin-bottom:0;}.mv2{margin-top:.5rem;margin-bottom:.5rem;}
+          .mh2{margin-left:.5rem;margin-right:.5rem;}.mh3{margin-left:1rem;margin-right:1rem;}.no-underline{text-decoration:none;}.tl{text-align:left;}
+          .tr{text-align:right;}.tc{text-align:center;}.ttu{text-transform:uppercase;}.f2{font-size:2.25rem;}.f3{font-size:1.5rem;}
+          .f4{font-size:1.25rem;}.f5{font-size:1rem;}.f6{font-size:.875rem;}.measure{max-width:30em;}.center{margin-left:auto;}
+          .center,.mr-auto{margin-right:auto;}.v-mid{vertical-align:middle;}.dim{opacity:1;}.dim,.dim:focus,.dim:hover{transition:opacity .15s ease-in;}
+          .dim:focus,.dim:hover{opacity:.5;}.dim:active{opacity:.8;transition:opacity .15s ease-out;}
+          .grow{
+            -moz-osx-font-smoothing:grayscale;-webkit-backface-visibility:hidden;
+            backface-visibility:hidden;-webkit-transform:translateZ(0);transform:translateZ(0);
+            transition:-webkit-transform .25s ease-out;transition:transform .25s ease-out;
+            transition:transform .25s ease-out,-webkit-transform .25s ease-out;
+          }
+          .grow:focus,.grow:hover{-webkit-transform:scale(1.05);transform:scale(1.05);}
+          .grow:active{-webkit-transform:scale(.9);transform:scale(.9);}
+          .bg-animate,.bg-animate:focus,.bg-animate:hover{transition:background-color .15s ease-in-out;}
+          @media screen and (min-width:30em){.dt-ns{display:table;}.dtc-ns{display:table-cell;}.dt--fixed-ns{table-layout:fixed;width:100%;}
+            .flex-row-ns{flex-direction:row;}.mw8-ns{max-width:64rem;}.w-third-ns{width:33.33333%;}.w-auto-ns{width:auto;}.pa4-ns{padding:2rem;}
+            .pt5-ns{padding-top:4rem;}.pv3-ns{padding-top:1rem;padding-bottom:1rem;}.mr4-ns{margin-right:2rem;}.mv4-ns{margin-top:2rem;margin-bottom:2rem;}
+            .mh1-ns{margin-left:.25rem;margin-right:.25rem;}.f3-ns{font-size:1.5rem;}.f5-ns{font-size:1rem;}.center-ns{margin-left:auto;}
+            .center-ns,.mr-auto-ns{margin-right:auto;}}@media screen and (min-width:30em) and (max-width:60em){.pa4-m{padding:2rem;}}
+          @media screen and (min-width:60em){.dib-l{display:inline-block;}.ph5-l{padding-left:4rem;padding-right:4rem;}.mh3-l{margin-left:1rem;margin-right:1rem;}
+            .mh4-l{margin-left:2rem;margin-right:2rem;}.f1-l{font-size:3rem;}}.color-neutral{color:#293648;}.color-neutral-70{color:#65737f;}
+          .color-neutral-60{color:#7c8792;}.color-neutral-50{color:#919ba4;}.color-neutral-30{color:#c3c9cd;}.color-neutral-20{color:#d3d7db;}
+          .color-green{color:#2aca4b;}.hover-color-pink:focus,.hover-color-pink:hover{color:#f9a5e4;}.bg-white{background-color:#fff;}
+          .bg-neutral{background-color:#293648;}.bg-neutral-04{background-color:#f6f7f8;}.bg-green{background-color:#2aca4b;}
+          body{font-family:'Source Sans Pro','PT Sans',Calibri,sans-serif;font-size:100%;background-color:var(--white);color:var(--neutral);-webkit-font-smoothing:antialiased;}a{color:var(--green);}.b--dat-neutral-80{border-color:var(--neutral-80);}.b--dat-neutral-10{border-color:var(--neutral-10);}.dat-shadow{box-shadow:0 0 30px rgba(0,0,0,.15);}.dat-list{text-indent:-20px;margin-left:-20px;}.dat-list li:before{content:'';display:inline-block;position:relative;top:-.125rem;width:.5rem;height:.5rem;margin-right:.75rem;background-image:url(./public/img/dat-hexagon.svg);background-size:100%;background-repeat:no-repeat;}.horizontal-rule:after{content:'';display:block;width:4rem;height:5px;margin-top:1.25rem;margin-bottom:1rem;background-color:var(--pink);}.horizontal-rule-footer:after{content:'';display:block;width:2rem;height:4px;background-color:var(--neutral-70);margin-top:.75rem;margin-bottom:1.5rem;}svg{width:inherit;height:inherit;fill:currentColor;}}
+      </style>
+      <link rel="preload" as="style" href="./de0d29aa1ca437ad/bundle.css" onload="this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="./de0d29aa1ca437ad/bundle.css"></noscript>
+    </head>
+    <body>
+      
+    <nav class="bb b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25">
+        <a class="_6b12417f v-mid dib link dim mr2 w2 h2" href="./" title="Dat Foundation">
+          <img src="./public/img/dat-logo-small.png">
+        </a>
+        <a class="v-mid link dim color-neutral b f5 f3-ns dib-l dn" href="./" title="Dat Foundation">Dat<span class="ml1 color-neutral-60">Foundation</span></a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr">
+        <a class="link dim color-neutral ttu tracked f6 f5-ns dib mr3 mr4-ns" href="https://blog.datproject.org"  title="Dat Blog">Blog</a>
+        <a class="link dim color-neutral ttu tracked f6 f5-ns dib mr3 mr4-ns" href="https://docs.datproject.org" title="Dat Documentation">Docs</a>
+        <a class="link dim color-neutral ttu tracked f6 f5-ns dib mr3 mr4-ns" href="./about" title="About Dat Foundation">About</a>
+      </div>
+    </nav>
+  
+    <div>
+      <div class="_6efdd8f5 mh2 mh4-l center contain">
+        <section class="tc pa3 pt5-ns">
+          <h1 class="f2 f1-l mb0 lh-title">
+            <span class="color-green">dat://</span> — a peer-to-peer protocol
+          </h1>
+          <h2 class="f3 mt3 mb3 color-neutral-50 fw4">
+           Community-driven project for distributed data synchronization
+          </h2>
+          <div class="w-100 mt5">
+            <img class="center h4" src="./public/img/dat-logo.png" alt="Dat Foundation">
+          </div>
+          
+    <div class="mt3 mw8 center tl flex flex-row-ns flex-column w-100">
+      <div class="flex w-100 w-third-ns bg-white dat-shadow mv4-ns mv2 mh3-l mh1-ns pa3">
+        <div class="flex-column flex">
+          <div class="mt3 w3 h3 center">
+            <svg><use xlink:href="#daticon-star-dat"/></svg>
+          </div>
+          <h4 class="f4 mb0 tc">Documentation</h4>
+          <ul class="dat-list list p0 lh-copy">
+            <li class="f5 mb2">
+              <b>Command Line:</b> sync data to your peer network.
+            </li>
+            <li class="f5 mb2">
+              <b>APIs:</b> build peer-to-peer applications in Node.js and the browser.
+            </li>
+          </ul>
+          <p class="tr mb0" style="margin-top:auto;">
+  
+    <a id="docs" onclick="" class="bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2" href="https://docs.datproject.org">Getting Started</a>
+  
+          </p>
+        </div>
+      </div>
+      <div class="flex w-100 w-third-ns bg-white dat-shadow mv4-ns mv2 mh3-l mh1-ns pa3">
+        <div class="flex-column flex">
+          <div class="mt3 w3 h3 center">
+            <svg><use xlink:href="#daticon-network"/></svg>
+          </div>
+          <h4 class="f4 mb0 tc">Why Dat?</h4>
+          <ul class="dat-list list p0 lh-copy">
+            <li class="f5 mb2">
+              <b>Resilient:</b> Works offline and with limited connectivity over a distributed peer-to-peer network.
+            </li>
+            <li class="f5 mb2">
+              <b>Neutral:</b> Dat is unopinionated and flexible for creating a variety of applications. </li>
+          </ul>
+          <p class="tr mb0" style="margin-top:auto;">
+  
+    <a id="how-dat-works" onclick="" class="bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2" href="https://dat-ecosystem.github.io/how-dat-works/">How Dat Works</a>
+  
+          </p>
+        </div>
+      </div>
+      <div class="flex w-100 w-third-ns bg-white dat-shadow mv4-ns mv2 mh3-l mh1-ns pa3">
+        <div class="flex-column flex">
+          <div class="mt3 w3 h3 center"><svg><use xlink:href="#daticon-happy-dat"/></svg></div>
+          <h4 class="tc f4 mb0">Community-Driven</h4>
+          <ul class="dat-list list p0 lh-copy">
+            <li class="f5 mb2">
+              <b>Protocol Specification:</b> learn about the roadmap and how you can get involved.
+            </li>
+            <li class="f5 mb2">
+              <b>Working Group:</b> a community-based governance model.
+            </li>
+          </ul>
+          <p class="tr mb0" style="margin-top:auto;">
+            
+    <a id="dat-protocol" onclick="" class="bg-green white b f5 no-underline grow dib v-mid ba ph3 pv2" href="https://dat-ecosystem.github.io/datprotocol.com">View the Specs</a>
+  
+          </p>
+        </div>
+      </div>
+
+    </div>
+  
+        </section>
+      </div>
+      
+    <section class="bg-white">
+      <div class="pa3 ph3 pa4-m mw8-ns center-ns">
+        <header>
+          <h2 class="f2 mb0">Consortium of Projects</h2>
+        </header>
+        <div class="pt3 pb5 flex flex-wrap w-100">
+          <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://beakerbrowser.com/" title="Beaker Browser">
+            <img class="h3 w-auto" src="./public/img/beaker.png" alt="Beaker Browser">
+          </a>
+          <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://wireline.io/" title="Wireline">
+            <img class="h3 w-auto" src="./public/img/wireline.png" alt="Wireline">
+          </a>
+          <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://peermaps.org/" title="Peermaps">
+            <img class="h3 w-auto" src="./public/img/peermaps.png" alt="Peermaps">
+          </a>
+          <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://inkandswitch.com/" title="Ink & Switch">
+            <img class="h3 w-auto" src="./public/img/inkandswitch.png" alt="Ink & Switch">
+          </a>
+          <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://hyperdivision.dk/" title="Hyperdivision">
+            <img class="h3 w-auto" src="./public/img/hyperdivision.png" alt="Hyperdivision">
+          </a>
+          <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://ara.one/" title="Ara">
+            <img class="h3 w-auto" src="./public/img/ara.png" alt="Ara">
+          </a>
+          <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://digital-democracy.org/" title="Digital Democracy">
+            <img class="h3 w-auto" src="./public/img/dd.png" alt="Digital Democracy">
+          </a>
+          <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://github.com/geut/" title="GEUT">
+            <img class="h3 w-auto" src="./public/img/geut.png" alt="GEUT">
+          </a>
+          <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://cabal-club.github.io/" title="Cabal Chat">
+            <img class="h3 w-auto" src="./public/img/cabal.png" alt="Cabal">
+          </a>
+          <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://datrs.yoshuawuyts.com/" title="Dat Rust">
+            <img class="h3 w-auto" src="./public/img/datrs.png" alt="Dat Rust">
+          </a>
+          <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://datcxx.github.io/" title="Dat CXX">
+            <img class="h3 w-auto" src="./public/img/datcxx.png" alt="Dat CXX">
+          </a>
+        </div>
+      </div>
+    </section>
+  
+      
+    <section class="bg-neutral ">
+      <div class="pv2 ph3 pa4-m mw8-ns center-ns">
+        <header>
+          <h2 class="white f2 mb0">Value-Driven Technology</h2>
+          <p class="f4 mt1 color-neutral-30 horizontal-rule"></p>
+        </header>
+        <div class="pv3 cf">
+          
+      <div class="fl w-third-ns w-100">
+        <h3 class="color-neutral-30 f3 mt0 pr2">Community First</h3>
+        <p class="lh-copy color-neutral-30 pr3"></p>
+      </div>
+    
+      <div class="fl w-third-ns w-100">
+        <h3 class="color-neutral-30 f3 mt0 pr2">Transparent Funding</h3>
+        <p class="lh-copy color-neutral-30 pr3"></p>
+      </div>
+    
+      <div class="fl w-third-ns w-100">
+        <h3 class="color-neutral-30 f3 mt0 pr2">Open Governance</h3>
+        <p class="lh-copy color-neutral-30 pr3"></p>
+      </div>
+    
+        </div>
+        
+      <p class="pv3-ns mb4">
+        
+    <a id="blog-cta" onclick="" class="f5 white bg-animate bg-green hover-bg-dark-green pa3 link" href="https://blog.datproject.org">Learn More on Dat Blog</a>
+  
+      </p>
+    
+      </div>
+    </section>
+  
+      
+    <section class="bg-neutral-04">
+      <div class="pv2 ph3 pa4-m mw8-ns center-ns">
+      <header>
+        <h2 class="f2 mb0">Sponsors and Supporters</h2>
+        <p class="f4 mt1 color-neutral-70 horizontal-rule">Dat Foundation is supported by donations and grants. Want to learn more? Check our <a
+            target="_blank"
+            class="link"
+            href="https://github.com/dat-ecosystem/organization"
+            >financial information</a>.</p>
+      </header>
+      <div class="pt3 flex flex-wrap w-100">
+        <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://codeforscience.org/" title="Code for Science and Society">
+          <img class="h-auto w5" src="./public/img/codeforscience.png" alt="Code for Science and Society">
+        </a>
+ <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://mozilla.org/" title="Mozilla">
+          <img class="h3 w-auto" src="./public/img/Mozilla_Logo.png" alt="Mozilla">
+        </a>
+        <a class="inline-flex items-center mv2 mh3" href="https://sloan.org/programs/digital-technology/data-and-computational-research" title="Dat Project Grant - Alfred P. Sloan Foundation">
+          <img class="h3 w-auto" src="./public/img/sloan.png" alt="Alfred P. Sloan Foundation">
+        </a>
+        <a class="inline-flex items-center mv2 mh3" href="https://www.knightfoundation.org/grants/201346305/" title="Dat Project Grant - John S. and James L. Knight Foundation">
+          <img class="h3 w-auto"  src="./public/img/knight.png" alt="John S. and James L. Knight Foundation">
+        </a>
+        <a class="inline-flex items-center mv2 mh3" href="https://www.moore.org/" title="Gordon and Betty Moore Foundation">
+          <img class="h3 w-auto" src="./public/img/moore.png" alt="Gordon and Betty Moore Foundation">
+        </a>
+        <a class="w-100 w-auto-ns inline-flex items-center mv2 mh3" href="https://wireline.io/" title="Wireline">
+          <img class="w-auto h3" src="./public/img/wireline.png" alt="Wireline">
+        </a>
+      </div>
+      <div class="pv3">
+        <div class="br1 ba b--green bg-white">
+          <div class="dt-ns dt--fixed-ns w-100">
+            <div class="pa3 pa4-ns dtc-ns v-mid">
+              <div>
+                <h2 class="fw4 f3 mt0 mb3">We need your support!</h2>
+                <p class="black-70 measure lh-copy mv0">
+                  You help make Dat Project a success!
+                  Donations sustain Dat, allowing us to improve core support and feature development.
+                </p>
+              </div>
+            </div>
+            <div class="pa3 pa4-ns dtc-ns v-mid">
+              
+    <a id="donate-cta" onclick="" class="no-underline f4 tc db w-100 pv3 bg-animate bg-green hover-bg-dark-green white" href="https://opencollective.com/dat">Donate Today</a>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  
+    </div>
+      
+  <footer class="bg-neutral white">
+    <section class="pv2 ph3 pa4-m mw8-ns center-ns">
+      <div class="pt2 cf">
+        <div class="fl w-third">
+          <h4 class="f4 horizontal-rule-footer">Explore</h4>
+          <ul class="dat-list p0 list lh-copy">
+            
+      <li>
+        <a class="f5 fw6 link color-neutral-20 hover-color-pink" href="https://dat-ecosystem.github.io/how-dat-works/">How Dat Works</a>
+      </li>
+    
+            
+      <li>
+        <a class="f5 fw6 link color-neutral-20 hover-color-pink" href="https://dat-ecosystem.github.io/datprotocol.com/">Dat Protocol</a>
+      </li>
+    
+          </ul>
+        </div>
+        <div class="fl w-third">
+          <h4 class="f4 horizontal-rule-footer">Learn</h4>
+          <ul class="dat-list p0 list lh-copy">
+            
+      <li>
+        <a class="f5 fw6 link color-neutral-20 hover-color-pink" href="./about">About</a>
+      </li>
+    
+            
+      <li>
+        <a class="f5 fw6 link color-neutral-20 hover-color-pink" href="https://blog.datproject.org">Blog</a>
+      </li>
+    
+            
+      <li>
+        <a class="f5 fw6 link color-neutral-20 hover-color-pink" href="https://blog.datproject.org/subscribe">Newsletter</a>
+      </li>
+    
+            
+      <li>
+        <a class="f5 fw6 link color-neutral-20 hover-color-pink" href="https://docs.datproject.org">Docs</a>
+      </li>
+    
+          </ul>
+        </div>
+        <div class="fl w-third">
+          <h4 class="f4 horizontal-rule-footer">Connect</h4>
+          <ul class="dat-list list p0 lh-copy">
+            
+      <li>
+        <a class="f5 fw6 link color-neutral-20 hover-color-pink" href="https://gitter.im/datproject/discussions">Chat</a>
+      </li>
+    
+            
+      <li>
+        <a class="f5 fw6 link color-neutral-20 hover-color-pink" href="https://twitter.com/dat_project">Twitter</a>
+      </li>
+    
+            
+      <li>
+        <a class="f5 fw6 link color-neutral-20 hover-color-pink" href="https://github.com/dat-ecosystem">Github</a>
+      </li>
+    
+          </ul>
+        </div>
+      </div>
+      <p class="bt b--dat-neutral-80 color-neutral-50 tc f6 pv3">
+        <strong>Dat Foundation</strong> © 2013 - 2019 • Source on <a class="color-neutral-50 hover-color-pink" href="https://github.com/dat-ecosystem/datproject.org">github</a>
+      </p>
+    </section>
+  </footer>
+  
+      
+    </body>
+  </html>
